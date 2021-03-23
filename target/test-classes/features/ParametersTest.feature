@@ -1,4 +1,4 @@
-@acz @wip
+@acz
 Feature:  Parameters examples
 
   Background:
