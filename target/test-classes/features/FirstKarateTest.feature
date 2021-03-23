@@ -1,4 +1,4 @@
-@wip
+
 Feature: welcome to karate
 
   Scenario: how to print

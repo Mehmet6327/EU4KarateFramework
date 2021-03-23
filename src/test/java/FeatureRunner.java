@@ -1,6 +1,3 @@
-package features;
-
-
 import com.intuit.karate.KarateOptions;
 import com.intuit.karate.junit4.Karate;
 import org.junit.runner.RunWith;
@@ -10,7 +7,4 @@ import org.junit.runner.RunWith;
         tags = "@wip"
 )
 public class FeatureRunner {
-
-
-
 }
