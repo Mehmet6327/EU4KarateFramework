@@ -1,4 +1,42 @@
-07:30:03.113 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-07:30:03.235 [print] Hello World
-07:30:03.259 [print] another print
-07:30:03.276 [print] then print
+08:08:23.282 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:23.322 [print] Hello World
+08:08:23.386 [print] another print
+08:08:23.394 [print] then print
+08:08:23.493 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:23.516 [print] some words to print
+08:08:23.561 [print] my name is karate kid
+08:08:23.578 [print] 4
+08:08:23.611 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:23.649 [print] my name isMike
+08:08:23.680 [print] Mike is 20 years old
+08:08:23.719 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:23.938 [print] {
+  "name": "sam",
+  "owes_tuition": false
+}
+
+08:08:24.005 [print] sam
+08:08:24.045 [print] false
+08:08:24.081 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:24.092 [print] 2099
+08:08:24.138 [print] Steven
+08:08:24.152 [print] King
+08:08:24.180 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:24.202 [print] Female
+08:08:24.223 [print] 3312820936
+08:08:24.240 [print] Lorenza
+08:08:24.251 [print] 10
+08:08:24.286 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+08:08:24.288 [print] [
+  {
+    "name": "sam",
+    "owes_tuition": false
+  },
+  {
+    "name": "mike",
+    "owes_tuition": true
+  }
+]
+
+08:08:24.347 [print] sam
+08:08:24.358 [print] true
