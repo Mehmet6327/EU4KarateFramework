@@ -1,3 +1,4 @@
+@wip
 Feature: using match keyword
 
   Scenario: some matching example
@@ -5,7 +6,6 @@ Feature: using match keyword
     * match name == 'Severus Snape'
     # similar to Assert.assertEquals(name,"Severus Snape");
     * match name != 'Tom Riddle'
-@wip
   Scenario: more matching example
     * def employee =
   """
