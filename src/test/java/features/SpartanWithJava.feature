@@ -1,8 +1,12 @@
 @acz
+  @wip
+
+
+
 Feature: Karate Java Integration
 
   Background:
-    * def spartanUrl = 'http://34.228.41.120:8000'
+    * def spartanUrl = 'http://18.208.178.105:8000'
 
   Scenario: Get a spartan with request header
     Given url spartanUrl
@@ -11,14 +15,14 @@ Feature: Karate Java Integration
     When method GET
     Then status 200
 
+
   Scenario: Create a new spartan
     Given  url spartanUrl
     And path "api/spartans"
     And header Accept = 'application/json'
     And header Content-Type = 'application/json'
     And request
-
-  """
+    """
     {
         "gender": "Female",
          "name": "Lorenza",
@@ -30,8 +34,6 @@ Feature: Karate Java Integration
     And print response
 
 
-
-  @wip
   Scenario: reading java methods
      #point the class that we want to run
      #Java.type --> used to connect to java class
