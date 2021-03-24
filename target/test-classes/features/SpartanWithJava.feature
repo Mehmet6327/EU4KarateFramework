@@ -1,7 +1,7 @@
 @acz
-  @wip
 
-#'http://34.228.41.120:8000'
+
+
 
 Feature: Karate Java Integration
 

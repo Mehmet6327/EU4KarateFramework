@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-03-24 03:26:31 pm</div>
+                <div id="nav-date">2021-03-24 03:52:19 pm</div>
                         
       
                 <div class="nav-container">
@@ -87,7 +87,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [1:10]</span><span class="scenario-name">path parameters </span>
                         </div>
-                        <div class="scenario-time passed">ms: 102</div>
+                        <div class="scenario-time passed">ms: 252</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[1:10]bg">
@@ -101,9 +101,9 @@
                             <div class="step-ref bg-step">1</div>
                             <div class="step-cell passed">* def baseUrl = 'https://api.exchangeratesapi.io'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">4</div>
                     </div>
-                    <div class="preformatted" data-parent="1">15:26:30.258 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="1">15:52:17.761 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[1:10]bg">
                         <div class="step-container" id="2">
                             <div class="step-ref bg-step">2</div>
@@ -116,7 +116,7 @@
                             <div class="step-ref bg-step">3</div>
                             <div class="step-cell passed">* def hrUrl = 'http://34.228.41.120:1000/ords/hr'</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">36</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
@@ -130,42 +130,42 @@
                             <div class="step-ref passed">5</div>
                             <div class="step-cell passed">And path "latest"</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">13</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="6">
                             <div class="step-ref passed">6</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">82</div>
+                        <div class="time-cell passed">195</div>
                     </div>
-                    <div class="preformatted" data-parent="6">15:26:30.285 request:
+                    <div class="preformatted" data-parent="6">15:52:17.832 request:
 1 &gt; GET https://api.exchangeratesapi.io/latest
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: api.exchangeratesapi.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:30.361 response time in milliseconds: 74.61
+15:52:18.015 response time in milliseconds: 181.71
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Methods: GET
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 3139
+1 &lt; Age: 2391
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 6350932c3df3d681-MAD
+1 &lt; CF-RAY: 6350b8f4ddb3f3f7-LHR
 1 &lt; Cache-Control: max-age=1800
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:26:30 GMT
+1 &lt; Date: Wed, 24 Mar 2021 14:52:18 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=rj25qlqMAniUxnw88Y5q9rcQxv2baRUsfrY6FD4HvSghNXTjWOjPfkEgTBT35m5WPa42R9Xg5vwCP6m%2BtNOLjkcCBGUoneBpeVJi2a7N7xPS7Y3pefv8bg%3D%3D"}],"max_age":604800,"group":"cf-nel"}
+1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=EIfWIAqowpgLSTrIwt67Z4dS6V4Tce6s0MjsebBRdkYB1gi8r824mLcZr%2BmVCsdWUd%2F7ldWfOYHqhiMHwOWOiZ%2BuqJxDq2uETXT%2B8kI0%2BfNvSohzvUrVrQ%3D%3D"}],"group":"cf-nel","max_age":604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d2b61f69a78a5bbedd1a425d272917d2a1616595990; expires=Fri, 23-Apr-21 14:26:30 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d345065d97b9dc5bec2c9b4d9c250144d1616597538; expires=Fri, 23-Apr-21 14:52:18 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
-1 &lt; cf-request-id: 09063a4fa70000d6818c122000000001
+1 &lt; cf-request-id: 090651ed060000f3f78f1d6000000001
 {"rates":{"CAD":1.4938,"HKD":9.229,"ISK":148.3,"PHP":57.779,"DKK":7.436,"HUF":366.51,"CZK":26.198,"AUD":1.5491,"RON":4.8893,"SEK":10.1813,"IDR":17105.58,"INR":86.1025,"BRL":6.5562,"RUB":90.2781,"HRK":7.5755,"JPY":128.99,"THB":36.819,"CHF":1.1066,"SGD":1.5955,"PLN":4.6191,"BGN":1.9558,"TRY":9.3638,"CNY":7.7367,"NOK":10.1783,"NZD":1.6918,"ZAR":17.5818,"USD":1.1883,"MXN":24.5926,"ILS":3.9099,"GBP":0.86198,"KRW":1342.48,"MYR":4.8988},"base":"EUR","date":"2021-03-23"}</div>
                     <div class="step-row">
                         <div class="step-container" id="7">
@@ -183,7 +183,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [2:16]</span><span class="scenario-name">path parameters </span>
                         </div>
-                        <div class="scenario-time passed">ms: 77</div>
+                        <div class="scenario-time passed">ms: 140</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[2:16]bg">
@@ -199,7 +199,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="8">15:26:30.371 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="8">15:52:18.025 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[2:16]bg">
                         <div class="step-container" id="9">
                             <div class="step-ref bg-step">9</div>
@@ -233,35 +233,35 @@
                             <div class="step-ref passed">13</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">72</div>
+                        <div class="time-cell passed">135</div>
                     </div>
-                    <div class="preformatted" data-parent="13">15:26:30.379 request:
+                    <div class="preformatted" data-parent="13">15:52:18.034 request:
 1 &gt; GET https://api.exchangeratesapi.io/2010-01-12
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: api.exchangeratesapi.io
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:30.448 response time in milliseconds: 67.36
+15:52:18.165 response time in milliseconds: 127.87
 1 &lt; 200
 1 &lt; Access-Control-Allow-Credentials: true
 1 &lt; Access-Control-Allow-Methods: GET
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 642
+1 &lt; Age: 64
 1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 6350932ca827ff38-MAD
+1 &lt; CF-RAY: 6350b8f5cad307a6-LHR
 1 &lt; Cache-Control: max-age=1800
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:26:30 GMT
+1 &lt; Date: Wed, 24 Mar 2021 14:52:18 GMT
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; NEL: {"max_age":604800,"report_to":"cf-nel"}
-1 &lt; Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=bzn0e6S%2Bi7gPQMbPfy4FZdOjliddsjTJMfQVylDV8S0a8GkFEMtfAbvtGh7xUjFOVUvIlGpDQMdI2uqoKfD7Hc54IaQ3xfgkpMjTZ8udzRE%2FrXFBzPvytA%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 &lt; Report-To: {"group":"cf-nel","endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=zdWYT%2B05PLTLkRGZ88OY7WH66e9Rn00tHUNU8cnaCdIGI8TMyjqPGSpYWsPosalBF%2Ba0UEHOSnz4vAZpSAIQ1trE0R9t9ldcFzADTTgKc57hg%2FnlTj5EIg%3D%3D"}],"max_age":604800}
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d6b9e194ef2b7c2a3fa2f96a15cb347681616595990; expires=Fri, 23-Apr-21 14:26:30 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Set-Cookie: __cfduid=d87953a16b0c15af86d385896f43c78531616597538; expires=Fri, 23-Apr-21 14:52:18 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Vary: Accept-Encoding
-1 &lt; cf-request-id: 09063a4fef0000ff38cc9a5000000001
+1 &lt; cf-request-id: 090651ed9d000007a641a28000000001
 {"rates":{"CAD":1.4959,"HKD":11.2301,"LVL":0.7093,"PHP":66.106,"DKK":7.4405,"HUF":268.18,"CZK":26.258,"AUD":1.5668,"RON":4.1405,"SEK":10.2215,"IDR":13281.14,"INR":66.21,"BRL":2.5309,"RUB":42.6974,"LTL":3.4528,"JPY":132.41,"THB":47.839,"CHF":1.4743,"SGD":2.0133,"PLN":4.0838,"BGN":1.9558,"TRY":2.1084,"CNY":9.8863,"NOK":8.1825,"NZD":1.9573,"ZAR":10.8264,"USD":1.4481,"MXN":18.4995,"EEK":15.6466,"GBP":0.8972,"KRW":1627.4,"MYR":4.8424,"HRK":7.2753},"base":"EUR","date":"2010-01-12"}</div>
                     <div class="step-row">
                         <div class="step-container" id="14">
@@ -279,7 +279,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [3:22]</span><span class="scenario-name">get all spartans with path </span>
                         </div>
-                        <div class="scenario-time passed">ms: 242</div>
+                        <div class="scenario-time passed">ms: 256</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[3:22]bg">
@@ -295,7 +295,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="15">15:26:30.459 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="15">15:52:18.186 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[3:22]bg">
                         <div class="step-container" id="16">
                             <div class="step-ref bg-step">16</div>
@@ -322,27 +322,27 @@
                             <div class="step-ref passed">19</div>
                             <div class="step-cell passed">And path "api/spartans"</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">8</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="20">
                             <div class="step-ref passed">20</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">227</div>
+                        <div class="time-cell passed">237</div>
                     </div>
-                    <div class="preformatted" data-parent="20">15:26:30.468 request:
+                    <div class="preformatted" data-parent="20">15:52:18.203 request:
 1 &gt; GET http://54.89.109.206:8000/api/spartans
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: 54.89.109.206:8000
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:30.688 response time in milliseconds: 218.62
+15:52:18.433 response time in milliseconds: 227.69
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:26:30 GMT
+1 &lt; Date: Wed, 24 Mar 2021 14:52:18 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Transfer-Encoding: chunked
 [{"id":1,"name":"Meade","gender":"Male","phone":3584128232},{"id":2,"name":"Nels","gender":"Male","phone":4218971348},{"id":3,"name":"Fidole","gender":"Male","phone":6105035231},{"id":4,"name":"Paige","gender":"Female","phone":3786741487},{"id":5,"name":"Blythe","gender":"Female","phone":3677539542},{"id":6,"name":"Tedmund","gender":"Male","phone":2227140732},{"id":7,"name":"Hershel","gender":"Male","phone":5278678322},{"id":8,"name":"Rodolfo","gender":"Male","phone":9601637574},{"id":9,"name":"Florrie","gender":"Female","phone":1702025787},{"id":10,"name":"Lorenza","gender":"Female","phone":3312820936},{"id":11,"name":"Nona","gender":"Female","phone":7959094216},{"id":12,"name":"Sol","gender":"Male","phone":7006438852},{"id":13,"name":"Jaimie","gender":"Female","phone":7842554879},{"id":14,"name":"Grenville","gender":"Male","phone":1065669615},{"id":15,"name":"Meta","gender":"Female","phone":1938695106},{"id":16,"name":"Sinclair","gender":"Male","phone":9714460354},{"id":17,"name":"Wash","gender":"Male","phone":4978976378},{"id":18,"name":"Allen","gender":"Male","phone":8716150217},{"id":19,"name":"Bunnie","gender":"Female","phone":7662992732},{"id":20,"name":"Lothario","gender":"Male","phone":7551551687},{"id":21,"name":"Mark","gender":"Male","phone":1852873386},{"id":22,"name":"Koenraad","gender":"Male","phone":8451740840},{"id":23,"name":"Mervin","gender":"Male","phone":9098436816},{"id":24,"name":"Julio","gender":"Male","phone":9393139934},{"id":25,"name":"Valentin","gender":"Male","phone":1536037088},{"id":26,"name":"Correy","gender":"Female","phone":7823876031},{"id":27,"name":"Jeanelle","gender":"Female","phone":6662999903},{"id":28,"name":"Woodrow","gender":"Male","phone":7411659821},{"id":29,"name":"Dorelle","gender":"Female","phone":6687391932},{"id":30,"name":"Melania","gender":"Female","phone":8916944276},{"id":31,"name":"Maressa","gender":"Female","phone":2018031787},{"id":32,"name":"Tessie","gender":"Female","phone":9545879168},{"id":33,"name":"Wilek","gender":"Male","phone":2877865902},{"id":34,"name":"Tucky","gender":"Male","phone":2935099804},{"id":35,"name":"Gardiner","gender":"Male","phone":3751113352},{"id":36,"name":"Sylas","gender":"Male","phone":9853891474},{"id":37,"name":"Grannie","gender":"Male","phone":1075127669},{"id":38,"name":"Juan","gender":"Male","phone":9614487605},{"id":39,"name":"Eveleen","gender":"Female","phone":1362642898},{"id":40,"name":"Druci","gender":"Female","phone":4507606768},{"id":41,"name":"Rosy","gender":"Female","phone":6721964988},{"id":42,"name":"Atlante","gender":"Female","phone":4579688654},{"id":43,"name":"Reid","gender":"Male","phone":8833893900},{"id":44,"name":"Panchito","gender":"Male","phone":7486765293},{"id":45,"name":"Heddie","gender":"Female","phone":1271425843},{"id":46,"name":"Delora","gender":"Female","phone":4115324496},{"id":47,"name":"Domenic","gender":"Male","phone":3952704485},{"id":48,"name":"Wyatt","gender":"Male","phone":7682768714},{"id":49,"name":"Reinaldo","gender":"Male","phone":3623233145},{"id":50,"name":"Jennica","gender":"Female","phone":6986436734},{"id":51,"name":"Padriac","gender":"Male","phone":8444611168},{"id":52,"name":"Tome","gender":"Male","phone":5654109704},{"id":53,"name":"Berna","gender":"Female","phone":2072918455},{"id":54,"name":"Bevon","gender":"Male","phone":9831834168},{"id":55,"name":"Karmen","gender":"Female","phone":5052029186},{"id":56,"name":"Ewan","gender":"Male","phone":5733729948},{"id":57,"name":"Freida","gender":"Female","phone":5712679899},{"id":58,"name":"Alfy","gender":"Female","phone":6529078662},{"id":59,"name":"Mickey","gender":"Male","phone":8775768925},{"id":60,"name":"Elisabeth","gender":"Female","phone":8165224005},{"id":61,"name":"Earlie","gender":"Male","phone":5709633007},{"id":62,"name":"Robinia","gender":"Female","phone":3542611707},{"id":63,"name":"Clayton","gender":"Male","phone":1782167106},{"id":64,"name":"Putnam","gender":"Male","phone":6744135688},{"id":65,"name":"Sean","gender":"Male","phone":8566508311},{"id":66,"name":"Quentin","gender":"Male","phone":3159018391},{"id":67,"name":"Janette","gender":"Female","phone":9887020445},{"id":68,"name":"Adda","gender":"Female","phone":5361981152},{"id":69,"name":"Elinor","gender":"Female","phone":3161765672},{"id":70,"name":"Abbey","gender":"Male","phone":1259516767},{"id":71,"name":"Collen","gender":"Female","phone":9614634242},{"id":72,"name":"Orion","gender":"Male","phone":7485352272},{"id":73,"name":"Amalita","gender":"Female","phone":2663607211},{"id":74,"name":"Chen","gender":"Male","phone":9537864587},{"id":75,"name":"Leland","gender":"Female","phone":9672110769},{"id":76,"name":"Arnie","gender":"Male","phone":4541117370},{"id":77,"name":"Stevana","gender":"Female","phone":1459126818},{"id":78,"name":"Cob","gender":"Male","phone":1853354209},{"id":79,"name":"Philis","gender":"Female","phone":2277085963},{"id":80,"name":"Jocelin","gender":"Female","phone":4299058649},{"id":81,"name":"Georgianne","gender":"Female","phone":9594130239},{"id":82,"name":"Catie","gender":"Female","phone":4758237746},{"id":83,"name":"Franky","gender":"Male","phone":7647130621},{"id":84,"name":"Saw","gender":"Male","phone":2673833440},{"id":85,"name":"Ingamar","gender":"Male","phone":6835038785},{"id":86,"name":"Brook","gender":"Female","phone":2655095364},{"id":87,"name":"Fenelia","gender":"Female","phone":6475942543},{"id":88,"name":"Julie","gender":"Male","phone":1279288759},{"id":89,"name":"Adan","gender":"Male","phone":8055782975},{"id":90,"name":"PutName","gender":"Male","phone":1231312321},{"id":91,"name":"Jaquenetta","gender":"Female","phone":7338210388},{"id":92,"name":"Caitlin","gender":"Female","phone":6911121800},{"id":93,"name":"Chanda","gender":"Female","phone":9289012086},{"id":94,"name":"Marylee","gender":"Female","phone":6385380284},{"id":95,"name":"Lilias","gender":"Female","phone":5986446659},{"id":96,"name":"Abie","gender":"Male","phone":1788387111},{"id":97,"name":"Saleem","gender":"Male","phone":6586151920},{"id":98,"name":"Elita","gender":"Female","phone":1042902741},{"id":99,"name":"Adair","gender":"Male","phone":3154964396},{"id":100,"name":"Terence","gender":"Male","phone":1311814806}]</div>
@@ -358,9 +358,9 @@
                             <div class="step-ref passed">22</div>
                             <div class="step-cell passed">And print response</div>
                         </div>
-                        <div class="time-cell passed">9</div>
+                        <div class="time-cell passed">10</div>
                     </div>
-                    <div class="preformatted" data-parent="22">15:26:30.702 [print] [
+                    <div class="preformatted" data-parent="22">15:52:18.448 [print] [
   {
     "gender": "Male",
     "phone": 3584128232,
@@ -971,7 +971,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [4:29]</span><span class="scenario-name">get ones spartan only </span>
                         </div>
-                        <div class="scenario-time passed">ms: 216</div>
+                        <div class="scenario-time passed">ms: 221</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[4:29]bg">
@@ -985,9 +985,9 @@
                             <div class="step-ref bg-step">23</div>
                             <div class="step-cell passed">* def baseUrl = 'https://api.exchangeratesapi.io'</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">5</div>
                     </div>
-                    <div class="preformatted" data-parent="23">15:26:30.720 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="23">15:52:18.465 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[4:29]bg">
                         <div class="step-container" id="24">
                             <div class="step-ref bg-step">24</div>
@@ -1028,20 +1028,20 @@
                             <div class="step-ref passed">29</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">208</div>
+                        <div class="time-cell passed">209</div>
                     </div>
-                    <div class="preformatted" data-parent="29">15:26:30.731 request:
+                    <div class="preformatted" data-parent="29">15:52:18.480 request:
 1 &gt; GET http://54.89.109.206:8000/api/spartans/10
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: 54.89.109.206:8000
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:30.936 response time in milliseconds: 204.07
+15:52:18.686 response time in milliseconds: 205.55
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:26:30 GMT
+1 &lt; Date: Wed, 24 Mar 2021 14:52:18 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Transfer-Encoding: chunked
 {"id":10,"name":"Lorenza","gender":"Female","phone":3312820936}</div>
@@ -1059,7 +1059,7 @@
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="preformatted" data-parent="31">15:26:30.938 [print] {
+                    <div class="preformatted" data-parent="31">15:52:18.687 [print] {
   "gender": "Female",
   "phone": 3312820936,
   "name": "Lorenza",
@@ -1070,7 +1070,7 @@
                             <div class="step-ref passed">32</div>
                             <div class="step-cell passed">And match response == { "gender": "Female", "phone": 3312820936, "name": "Lorenza", "id": 10}</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                 </div>
                 <div class="scenario">
@@ -1081,7 +1081,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [5:38]</span><span class="scenario-name">get ones spartan only </span>
                         </div>
-                        <div class="scenario-time passed">ms: 218</div>
+                        <div class="scenario-time passed">ms: 208</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[5:38]bg">
@@ -1097,7 +1097,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="33">15:26:30.953 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="33">15:52:18.696 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[5:38]bg">
                         <div class="step-container" id="34">
                             <div class="step-ref bg-step">34</div>
@@ -1151,20 +1151,20 @@
                             <div class="step-ref passed">40</div>
                             <div class="step-cell passed">When method get</div>
                         </div>
-                        <div class="time-cell passed">215</div>
+                        <div class="time-cell passed">206</div>
                     </div>
-                    <div class="preformatted" data-parent="40">15:26:30.961 request:
+                    <div class="preformatted" data-parent="40">15:52:18.701 request:
 1 &gt; GET http://54.89.109.206:8000/api/spartans/10
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: 54.89.109.206:8000
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:31.171 response time in milliseconds: 209.30
+15:52:18.904 response time in milliseconds: 202.19
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:26:30 GMT
+1 &lt; Date: Wed, 24 Mar 2021 14:52:18 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Transfer-Encoding: chunked
 {"id":10,"name":"Lorenza","gender":"Female","phone":3312820936}</div>
@@ -1180,9 +1180,9 @@
                             <div class="step-ref passed">42</div>
                             <div class="step-cell passed">And print response</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="42">15:26:31.173 [print] {
+                    <div class="preformatted" data-parent="42">15:52:18.905 [print] {
   "gender": "Female",
   "phone": 3312820936,
   "name": "Lorenza",
@@ -1204,7 +1204,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [6:57]</span><span class="scenario-name">query parameters </span>
                         </div>
-                        <div class="scenario-time passed">ms: 257</div>
+                        <div class="scenario-time passed">ms: 244</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[6:57]bg">
@@ -1218,9 +1218,9 @@
                             <div class="step-ref bg-step">44</div>
                             <div class="step-cell passed">* def baseUrl = 'https://api.exchangeratesapi.io'</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="44">15:26:31.190 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="44">15:52:18.915 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[6:57]bg">
                         <div class="step-container" id="45">
                             <div class="step-ref bg-step">45</div>
@@ -1247,41 +1247,41 @@
                             <div class="step-ref passed">48</div>
                             <div class="step-cell passed">And path "api/spartans/search"</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">5</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="49">
                             <div class="step-ref passed">49</div>
                             <div class="step-cell passed">And param nameContains = 'j'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="50">
                             <div class="step-ref passed">50</div>
                             <div class="step-cell passed">And param gender = 'Female'</div>
                         </div>
-                        <div class="time-cell passed">3</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="51">
                             <div class="step-ref passed">51</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">218</div>
+                        <div class="time-cell passed">216</div>
                     </div>
-                    <div class="preformatted" data-parent="51">15:26:31.212 request:
+                    <div class="preformatted" data-parent="51">15:52:18.932 request:
 1 &gt; GET http://54.89.109.206:8000/api/spartans/search?nameContains=j&amp;gender=Female
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: 54.89.109.206:8000
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:31.426 response time in milliseconds: 213.74
+15:52:19.144 response time in milliseconds: 212.04
 1 &lt; 200
 1 &lt; Connection: keep-alive
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:26:30 GMT
+1 &lt; Date: Wed, 24 Mar 2021 14:52:18 GMT
 1 &lt; Keep-Alive: timeout=60
 1 &lt; Transfer-Encoding: chunked
 {"content":[{"id":13,"name":"Jaimie","gender":"Female","phone":7842554879},{"id":27,"name":"Jeanelle","gender":"Female","phone":6662999903},{"id":50,"name":"Jennica","gender":"Female","phone":6986436734},{"id":67,"name":"Janette","gender":"Female","phone":9887020445},{"id":80,"name":"Jocelin","gender":"Female","phone":4299058649},{"id":91,"name":"Jaquenetta","gender":"Female","phone":7338210388}],"pageable":{"sort":{"sorted":false,"unsorted":true,"empty":true},"offset":0,"pageSize":20,"pageNumber":0,"paged":true,"unpaged":false},"last":true,"totalElements":20,"totalPages":1,"number":0,"sort":{"sorted":false,"unsorted":true,"empty":true},"size":20,"first":true,"numberOfElements":6,"empty":false}</div>
@@ -1297,7 +1297,7 @@
                             <div class="step-ref passed">53</div>
                             <div class="step-cell passed">And match header Content-Type == 'application/json'</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="54">
@@ -1306,7 +1306,7 @@
                         </div>
                         <div class="time-cell passed">1</div>
                     </div>
-                    <div class="preformatted" data-parent="54">15:26:31.429 [print] {
+                    <div class="preformatted" data-parent="54">15:52:19.145 [print] {
   "number": 0,
   "last": true,
   "size": 20,
@@ -1376,7 +1376,7 @@
                             <div class="step-ref passed">55</div>
                             <div class="step-cell passed">And match response.pageable.pageNumber == 0</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container">
@@ -1411,7 +1411,7 @@
                             <div class="step-ref passed">58</div>
                             <div class="step-cell passed">And match response.content[0].name == 'Jaimie'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container">
@@ -1425,7 +1425,7 @@
                             <div class="step-ref passed">59</div>
                             <div class="step-cell passed">And match each response.content[*].phone == '#number'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                 </div>
                 <div class="scenario">
@@ -1436,7 +1436,7 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [7:77]</span><span class="scenario-name">hr regions example </span>
                         </div>
-                        <div class="scenario-time passed">ms: 429</div>
+                        <div class="scenario-time passed">ms: 504</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="[7:77]bg">
@@ -1452,7 +1452,7 @@
                         </div>
                         <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="60">15:26:31.462 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="60">15:52:19.169 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row" data-parent="[7:77]bg">
                         <div class="step-container" id="61">
                             <div class="step-ref bg-step">61</div>
@@ -1465,7 +1465,7 @@
                             <div class="step-ref bg-step">62</div>
                             <div class="step-cell passed">* def hrUrl = 'http://34.228.41.120:1000/ords/hr'</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="63">
@@ -1479,38 +1479,38 @@
                             <div class="step-ref passed">64</div>
                             <div class="step-cell passed">And path 'regions'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">4</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="65">
                             <div class="step-ref passed">65</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">408</div>
+                        <div class="time-cell passed">486</div>
                     </div>
-                    <div class="preformatted" data-parent="65">15:26:31.475 request:
+                    <div class="preformatted" data-parent="65">15:52:19.178 request:
 1 &gt; GET http://34.228.41.120:1000/ords/hr/regions
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
 1 &gt; Host: 34.228.41.120:1000
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:31.735 response time in milliseconds: 258.24
+15:52:19.469 response time in milliseconds: 290.25
 1 &lt; 301
 1 &lt; Location: http://34.228.41.120:1000/ords/hr/regions/
 1 &lt; Transfer-Encoding: chunked
 
-15:26:31.743 request:
+15:52:19.477 request:
 2 &gt; GET http://34.228.41.120:1000/ords/hr/regions
 2 &gt; Accept-Encoding: gzip,deflate
 2 &gt; Connection: Keep-Alive
 2 &gt; Host: 34.228.41.120:1000
 2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:26:31.879 response time in milliseconds: 125.61
+15:52:19.661 response time in milliseconds: 182.77
 2 &lt; 200
 2 &lt; Content-Type: application/json
-2 &lt; Date: Wed, 24 Mar 2021 14:26:21 GMT
+2 &lt; Date: Wed, 24 Mar 2021 14:52:09 GMT
 2 &lt; ETag: "n0RfIi41Uf6Et7Q3O+B1f2mBqcwP1POugILrR8mzso4cxYV8W+LHDsgXDLNxT7f0wQEMmqbJMEji2rFohO8F7A=="
 2 &lt; Transfer-Encoding: chunked
 {"items":[{"region_id":56,"region_name":"RandomRegion","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/56"}]},{"region_id":998,"region_name":"Cybertek Saturn","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/998"}]},{"region_id":24,"region_name":"Cybertek Austria","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/24"}]},{"region_id":8,"region_name":"Cybertek Austria","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/8"}]},{"region_id":87,"region_name":"Cybertek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/87"}]},{"region_id":80,"region_name":"Cybertek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/80"}]},{"region_id":11,"region_name":"Cybertek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/11"}]},{"region_id":300,"region_name":"Cybertek Europe","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/300"}]},{"region_id":473,"region_name":"RandomRegion","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/473"}]},{"region_id":21,"region_name":"Cybertek SpainMD","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/21"}]},{"region_id":228,"region_name":"RandomRegion","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/228"}]},{"region_id":999,"region_name":"Cybertek Saturn","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/999"}]},{"region_id":555,"region_name":"DXB","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/555"}]},{"region_id":333,"region_name":"UX","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/333"}]},{"region_id":16,"region_name":"Jo's Land","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/16"}]},{"region_id":444,"region_name":"DXB2","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/444"}]},{"region_id":222,"region_name":"Vern","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/222"}]},{"region_id":158,"region_name":"Cybertfgek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/158"}]},{"region_id":159,"region_name":"Cybertfgek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/159"}]},{"region_id":1587,"region_name":"Cybertfgek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/1587"}]},{"region_id":1001,"region_name":"Cybertek ITALY","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/1001"}]},{"region_id":937,"region_name":"Cybertek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/937"}]},{"region_id":66,"region_name":"randomregion","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/66"}]},{"region_id":50,"region_name":"randomregion","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/50"}]},{"region_id":2578,"region_name":"Cybertek Germany","links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/2578"}]}],"hasMore":true,"limit":25,"offset":0,"count":25,"links":[{"rel":"self","href":"http://34.228.41.120:1000/ords/hr/regions/"},{"rel":"edit","href":"http://34.228.41.120:1000/ords/hr/regions/"},{"rel":"describedby","href":"http://34.228.41.120:1000/ords/hr/metadata-catalog/regions/"},{"rel":"first","href":"http://34.228.41.120:1000/ords/hr/regions/"},{"rel":"next","href":"http://34.228.41.120:1000/ords/hr/regions/?offset=25"}]}</div>
@@ -1528,7 +1528,7 @@
                         </div>
                         <div class="time-cell passed">2</div>
                     </div>
-                    <div class="preformatted" data-parent="67">15:26:31.883 [print] {
+                    <div class="preformatted" data-parent="67">15:52:19.666 [print] {
   "offset": 0,
   "hasMore": true,
   "limit": 25,
@@ -1813,7 +1813,7 @@
                             <div class="step-ref passed">68</div>
                             <div class="step-cell passed">And match response.limit == 25</div>
                         </div>
-                        <div class="time-cell passed">8</div>
+                        <div class="time-cell passed">7</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="69">

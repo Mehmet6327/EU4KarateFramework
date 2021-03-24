@@ -1,5 +1,5 @@
+@acz
 Feature: get user token
-  @acz
 
   Scenario: get one user token
     Given url 'https://cybertek-reservation-api-qa2.herokuapp.com/'
