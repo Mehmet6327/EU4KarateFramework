@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: features/ApiTest1.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>24 Mar 2021, 18:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/ApiTest1.feature</td>
+                    <td      class="passed"    >24</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">24</td>
+
+          <td  class="passed"    >4</td>
+          <td >0</td>
+          <td class="total">4</td>
+
+          <td class="duration" data-value="3830989000">3s 830ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_acz.html">@acz</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/ApiTest1.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">exchange rate api tests</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 984ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">basic test with status code validation</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.exchangeratesapi.io/latest'</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:29:46.570 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">1s 972ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>18:29:48.022 request:
+1 &gt; GET https://api.exchangeratesapi.io/latest
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.exchangeratesapi.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.587 response time in milliseconds: 558.33
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1038
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 63519fadffc9ce23-LHR
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=u0FLobN%2BPw3E2c0HilcuSRCJ3ryFPvbZdDToC%2F4k1pdUwXNLn5%2Beb1MydyziOo8pbXEksMDHrLqIARxUc9XZNLDkUkc5R9Fu9I4wOfgBmyu200KM6W%2Bwfw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d8479bad886e9b23c3ce39f5351eacd291616606988; expires=Fri, 23-Apr-21 17:29:48 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 0906e220ba0000ce23243c2000000001
+{&quot;rates&quot;:{&quot;CAD&quot;:1.4884,&quot;HKD&quot;:9.1863,&quot;ISK&quot;:150.1,&quot;PHP&quot;:57.468,&quot;DKK&quot;:7.436,&quot;HUF&quot;:364.93,&quot;CZK&quot;:26.206,&quot;AUD&quot;:1.5532,&quot;RON&quot;:4.888,&quot;SEK&quot;:10.1635,&quot;IDR&quot;:17082.0,&quot;INR&quot;:85.8585,&quot;BRL&quot;:6.5258,&quot;RUB&quot;:90.2013,&quot;HRK&quot;:7.573,&quot;JPY&quot;:128.6,&quot;THB&quot;:36.658,&quot;CHF&quot;:1.1068,&quot;SGD&quot;:1.5917,&quot;PLN&quot;:4.628,&quot;BGN&quot;:1.9558,&quot;TRY&quot;:9.4009,&quot;CNY&quot;:7.7133,&quot;NOK&quot;:10.1563,&quot;NZD&quot;:1.6963,&quot;ZAR&quot;:17.5248,&quot;USD&quot;:1.1825,&quot;MXN&quot;:24.5236,&quot;ILS&quot;:3.8918,&quot;GBP&quot;:0.8625,&quot;KRW&quot;:1338.12,&quot;MYR&quot;:4.8843},&quot;base&quot;:&quot;EUR&quot;,&quot;date&quot;:&quot;2021-03-24&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 452ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get rates fro specific day</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.exchangeratesapi.io/2010-01-12'</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>18:29:47.150 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1s 446ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>18:29:48.026 request:
+1 &gt; GET https://api.exchangeratesapi.io/2010-01-12
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.exchangeratesapi.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.600 response time in milliseconds: 566.05
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 613
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 63519fadbc5ce664-LHR
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;max_age&quot;:604800,&quot;report_to&quot;:&quot;cf-nel&quot;}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=TfzAm7EjeMEqwkCZF%2BnBxdhhnQ4gOhRzsBeMinWDI0NpRuhFXMl%2FFFksyNZxOx8e2JHnDrksIx9COpLjjBJbRlPhp7O3WHhOc2zQxaBK3f8UD4aAfZKqRw%3D%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=ddc833aa83566b2a748366b6f4343f5c81616606988; expires=Fri, 23-Apr-21 17:29:48 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 0906e220940000e6649f861000000001
+{&quot;rates&quot;:{&quot;CAD&quot;:1.4959,&quot;HKD&quot;:11.2301,&quot;LVL&quot;:0.7093,&quot;PHP&quot;:66.106,&quot;DKK&quot;:7.4405,&quot;HUF&quot;:268.18,&quot;CZK&quot;:26.258,&quot;AUD&quot;:1.5668,&quot;RON&quot;:4.1405,&quot;SEK&quot;:10.2215,&quot;IDR&quot;:13281.14,&quot;INR&quot;:66.21,&quot;BRL&quot;:2.5309,&quot;RUB&quot;:42.6974,&quot;LTL&quot;:3.4528,&quot;JPY&quot;:132.41,&quot;THB&quot;:47.839,&quot;CHF&quot;:1.4743,&quot;SGD&quot;:2.0133,&quot;PLN&quot;:4.0838,&quot;BGN&quot;:1.9558,&quot;TRY&quot;:2.1084,&quot;CNY&quot;:9.8863,&quot;NOK&quot;:8.1825,&quot;NZD&quot;:1.9573,&quot;ZAR&quot;:10.8264,&quot;USD&quot;:1.4481,&quot;MXN&quot;:18.4995,&quot;EEK&quot;:15.6466,&quot;GBP&quot;:0.8972,&quot;KRW&quot;:1627.4,&quot;MYR&quot;:4.8424,&quot;HRK&quot;:7.2753},&quot;base&quot;:&quot;EUR&quot;,&quot;date&quot;:&quot;2010-01-12&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">187ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-9">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">header verification</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-9" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.exchangeratesapi.io/2010-01-12'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>18:29:48.600 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">153ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>18:29:48.604 request:
+1 &gt; GET https://api.exchangeratesapi.io/2010-01-12
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.exchangeratesapi.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.754 response time in milliseconds: 147.98
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 613
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 63519faf2c35540f-LHR
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=Ml6IQJnWOyZNGHgGrnkS6Du%2BdNhTVfVs8XWM624LA8rNzB1aJQ9Q%2BzfIM4V5mM8qKWfskQHaQ4Wz0Mb7ifla%2BK2kw4D53HNlQGjC692g1bqLDWJE9hg7VQ%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d6588a5faaf56708606cc1f0d105f3cc51616606988; expires=Fri, 23-Apr-21 17:29:48 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 0906e221770000540f35027000000001
+{&quot;rates&quot;:{&quot;CAD&quot;:1.4959,&quot;HKD&quot;:11.2301,&quot;LVL&quot;:0.7093,&quot;PHP&quot;:66.106,&quot;DKK&quot;:7.4405,&quot;HUF&quot;:268.18,&quot;CZK&quot;:26.258,&quot;AUD&quot;:1.5668,&quot;RON&quot;:4.1405,&quot;SEK&quot;:10.2215,&quot;IDR&quot;:13281.14,&quot;INR&quot;:66.21,&quot;BRL&quot;:2.5309,&quot;RUB&quot;:42.6974,&quot;LTL&quot;:3.4528,&quot;JPY&quot;:132.41,&quot;THB&quot;:47.839,&quot;CHF&quot;:1.4743,&quot;SGD&quot;:2.0133,&quot;PLN&quot;:4.0838,&quot;BGN&quot;:1.9558,&quot;TRY&quot;:2.1084,&quot;CNY&quot;:9.8863,&quot;NOK&quot;:8.1825,&quot;NZD&quot;:1.9573,&quot;ZAR&quot;:10.8264,&quot;USD&quot;:1.4481,&quot;MXN&quot;:18.4995,&quot;EEK&quot;:15.6466,&quot;GBP&quot;:0.8972,&quot;KRW&quot;:1627.4,&quot;MYR&quot;:4.8424,&quot;HRK&quot;:7.2753},&quot;base&quot;:&quot;EUR&quot;,&quot;date&quot;:&quot;2010-01-12&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Content-Type == 'application/json'</span>
+  
+  <span class="lead-duration duration">002ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Vary == 'Accept-Encoding'</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Connection == 'keep-alive'</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Date == '#present'</span>
+  
+  <span class="lead-duration duration">016ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">206ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">json body verification</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url 'https://api.exchangeratesapi.io/2010-01-12'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>18:29:48.615 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">147ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>18:29:48.618 request:
+1 &gt; GET https://api.exchangeratesapi.io/2010-01-12
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.exchangeratesapi.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.763 response time in milliseconds: 142.14
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 613
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 63519faf3c6d540f-LHR
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=HWriRGxVaECaT9e6LG2%2B0GysbclD4c4np6wlzFZFQuhSz4I2ie9n00CsJ6vQDXrAMA1a%2BkmdYEsyXXTo5GxJHrxAFCLCjOGmyAcB5hSV6NUCZqCCl4ClzQ%3D%3D&quot;}]}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d6588a5faaf56708606cc1f0d105f3cc51616606988; expires=Fri, 23-Apr-21 17:29:48 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 0906e221880000540f3096f000000001
+{&quot;rates&quot;:{&quot;CAD&quot;:1.4959,&quot;HKD&quot;:11.2301,&quot;LVL&quot;:0.7093,&quot;PHP&quot;:66.106,&quot;DKK&quot;:7.4405,&quot;HUF&quot;:268.18,&quot;CZK&quot;:26.258,&quot;AUD&quot;:1.5668,&quot;RON&quot;:4.1405,&quot;SEK&quot;:10.2215,&quot;IDR&quot;:13281.14,&quot;INR&quot;:66.21,&quot;BRL&quot;:2.5309,&quot;RUB&quot;:42.6974,&quot;LTL&quot;:3.4528,&quot;JPY&quot;:132.41,&quot;THB&quot;:47.839,&quot;CHF&quot;:1.4743,&quot;SGD&quot;:2.0133,&quot;PLN&quot;:4.0838,&quot;BGN&quot;:1.9558,&quot;TRY&quot;:2.1084,&quot;CNY&quot;:9.8863,&quot;NOK&quot;:8.1825,&quot;NZD&quot;:1.9573,&quot;ZAR&quot;:10.8264,&quot;USD&quot;:1.4481,&quot;MXN&quot;:18.4995,&quot;EEK&quot;:15.6466,&quot;GBP&quot;:0.8972,&quot;KRW&quot;:1627.4,&quot;MYR&quot;:4.8424,&quot;HRK&quot;:7.2753},&quot;base&quot;:&quot;EUR&quot;,&quot;date&quot;:&quot;2010-01-12&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Content-Type == 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">001ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>18:29:48.766 [print] {
+  &quot;date&quot;: &quot;2010-01-12&quot;,
+  &quot;rates&quot;: {
+    &quot;CHF&quot;: 1.4743,
+    &quot;HRK&quot;: 7.2753,
+    &quot;MXN&quot;: 18.4995,
+    &quot;LVL&quot;: 0.7093,
+    &quot;LTL&quot;: 3.4528,
+    &quot;ZAR&quot;: 10.8264,
+    &quot;INR&quot;: 66.21,
+    &quot;THB&quot;: 47.839,
+    &quot;CNY&quot;: 9.8863,
+    &quot;AUD&quot;: 1.5668,
+    &quot;KRW&quot;: 1627.4,
+    &quot;JPY&quot;: 132.41,
+    &quot;PLN&quot;: 4.0838,
+    &quot;GBP&quot;: 0.8972,
+    &quot;IDR&quot;: 13281.14,
+    &quot;HUF&quot;: 268.18,
+    &quot;PHP&quot;: 66.106,
+    &quot;TRY&quot;: 2.1084,
+    &quot;RUB&quot;: 42.6974,
+    &quot;HKD&quot;: 11.2301,
+    &quot;DKK&quot;: 7.4405,
+    &quot;CAD&quot;: 1.4959,
+    &quot;USD&quot;: 1.4481,
+    &quot;MYR&quot;: 4.8424,
+    &quot;BGN&quot;: 1.9558,
+    &quot;EEK&quot;: 15.6466,
+    &quot;NOK&quot;: 8.1825,
+    &quot;RON&quot;: 4.1405,
+    &quot;SGD&quot;: 2.0133,
+    &quot;CZK&quot;: 26.258,
+    &quot;SEK&quot;: 10.2215,
+    &quot;NZD&quot;: 1.9573,
+    &quot;BRL&quot;: 2.5309
+  },
+  &quot;base&quot;: &quot;EUR&quot;
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response.base</span>
+  
+  <span class="lead-duration duration">014ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>18:29:48.781 [print] EUR</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.base == 'EUR'</span>
+  
+  <span class="lead-duration duration">008ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response.rates</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>18:29:48.802 [print] {
+  &quot;CHF&quot;: 1.4743,
+  &quot;HRK&quot;: 7.2753,
+  &quot;MXN&quot;: 18.4995,
+  &quot;LVL&quot;: 0.7093,
+  &quot;LTL&quot;: 3.4528,
+  &quot;ZAR&quot;: 10.8264,
+  &quot;INR&quot;: 66.21,
+  &quot;THB&quot;: 47.839,
+  &quot;CNY&quot;: 9.8863,
+  &quot;AUD&quot;: 1.5668,
+  &quot;KRW&quot;: 1627.4,
+  &quot;JPY&quot;: 132.41,
+  &quot;PLN&quot;: 4.0838,
+  &quot;GBP&quot;: 0.8972,
+  &quot;IDR&quot;: 13281.14,
+  &quot;HUF&quot;: 268.18,
+  &quot;PHP&quot;: 66.106,
+  &quot;TRY&quot;: 2.1084,
+  &quot;RUB&quot;: 42.6974,
+  &quot;HKD&quot;: 11.2301,
+  &quot;DKK&quot;: 7.4405,
+  &quot;CAD&quot;: 1.4959,
+  &quot;USD&quot;: 1.4481,
+  &quot;MYR&quot;: 4.8424,
+  &quot;BGN&quot;: 1.9558,
+  &quot;EEK&quot;: 15.6466,
+  &quot;NOK&quot;: 8.1825,
+  &quot;RON&quot;: 4.1405,
+  &quot;SGD&quot;: 2.0133,
+  &quot;CZK&quot;: 26.258,
+  &quot;SEK&quot;: 10.2215,
+  &quot;NZD&quot;: 1.9573,
+  &quot;BRL&quot;: 2.5309
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response.rates.USD</span>
+  
+  <span class="lead-duration duration">015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>18:29:48.818 [print] 1.4481</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.rates.USD == '#present'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.rates.USD == 1.4481</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

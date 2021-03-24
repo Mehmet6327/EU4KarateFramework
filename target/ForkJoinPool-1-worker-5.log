@@ -1,0 +1,164 @@
+18:29:46.570 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:48.022 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=sbirdbj%40fc2.com&password=asenorval
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.960 response time in milliseconds: 935.58
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE"}
+
+18:29:48.962 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE
+18:29:48.973 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:48.980 [print] 2099
+18:29:48.988 [print] Steven
+18:29:49.017 [print] King
+18:29:49.044 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:49.046 [print] [
+  {
+    "name": "sam",
+    "owes_tuition": false
+  },
+  {
+    "name": "mike",
+    "owes_tuition": true
+  }
+]
+
+18:29:49.141 [print] sam
+18:29:49.161 [print] true
+18:29:49.205 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:49.258 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=dfrederickb5%40yellowbook.com&password=engraciahuc
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:49.880 response time in milliseconds: 619.74
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MCIsImF1ZCI6InN0dWRlbnQtdGVhbS1tZW1iZXIifQ.GH2m3CEVofr5DPqpqX-kDc0S01i1byMYrUCLBaiyW9E","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MCIsImF1ZCI6InN0dWRlbnQtdGVhbS1tZW1iZXIifQ.GH2m3CEVofr5DPqpqX-kDc0S01i1byMYrUCLBaiyW9E"}
+
+18:29:49.882 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MCIsImF1ZCI6InN0dWRlbnQtdGVhbS1tZW1iZXIifQ.GH2m3CEVofr5DPqpqX-kDc0S01i1byMYrUCLBaiyW9E
+18:29:49.904 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.356 response time in milliseconds: 449.84
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:50 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:50.356 status code was: 422, expected: 200, response time: 450, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:50.362 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.792 response time in milliseconds: 428.56
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:50 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:50.792 status code was: 422, expected: 200, response time: 429, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:50.798 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:51.267 response time in milliseconds: 452.77
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:51 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:51.268 status code was: 422, expected: 200, response time: 453, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:51.273 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:51.721 response time in milliseconds: 443.35
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:51 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:51.721 status code was: 422, expected: 200, response time: 443, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:51.728 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:52.189 response time in milliseconds: 457.23
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:52 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:52.190 status code was: 422, expected: 200, response time: 457, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:52.196 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:52.632 response time in milliseconds: 431.37
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:52 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:52.633 status code was: 422, expected: 200, response time: 431, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.

@@ -46,7 +46,7 @@
                 <div id="nav-type">Scenarios</div>
                          
         
-                <div id="nav-date">2021-03-24 03:52:14 pm</div>
+                <div id="nav-date">2021-03-24 06:29:55 pm</div>
                         
       
                 <div class="nav-container">
@@ -69,52 +69,52 @@
                             </div>
                             <span class="scenario-keyword">Scenario: [1:4]</span><span class="scenario-name">get one user token </span>
                         </div>
-                        <div class="scenario-time passed">ms: 700</div>
+                        <div class="scenario-time passed">ms: 2349</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="1">
                             <div class="step-ref passed">1</div>
                             <div class="step-cell passed">Given url 'https://cybertek-reservation-api-qa2.herokuapp.com/'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">0</div>
                     </div>
-                    <div class="preformatted" data-parent="1">15:52:13.991 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+                    <div class="preformatted" data-parent="1">18:29:46.570 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
                     <div class="step-row">
                         <div class="step-container" id="2">
                             <div class="step-ref passed">2</div>
                             <div class="step-cell passed">And path 'sign'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">6</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="3">
                             <div class="step-ref passed">3</div>
                             <div class="step-cell passed">And header Accept = 'application/json'</div>
                         </div>
-                        <div class="time-cell passed">0</div>
+                        <div class="time-cell passed">58</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="4">
                             <div class="step-ref passed">4</div>
                             <div class="step-cell passed">And param email = 'sbirdbj@fc2.com'</div>
                         </div>
-                        <div class="time-cell passed">5</div>
+                        <div class="time-cell passed">34</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="5">
                             <div class="step-ref passed">5</div>
                             <div class="step-cell passed">And param password = 'asenorval'</div>
                         </div>
-                        <div class="time-cell passed">6</div>
+                        <div class="time-cell passed">20</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="6">
                             <div class="step-ref passed">6</div>
                             <div class="step-cell passed">When method GET</div>
                         </div>
-                        <div class="time-cell passed">661</div>
+                        <div class="time-cell passed">2229</div>
                     </div>
-                    <div class="preformatted" data-parent="6">15:52:14.019 request:
+                    <div class="preformatted" data-parent="6">18:29:48.022 request:
 1 &gt; GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=sbirdbj%40fc2.com&amp;password=asenorval
 1 &gt; Accept: application/json
 1 &gt; Accept-Encoding: gzip,deflate
@@ -122,11 +122,11 @@
 1 &gt; Host: cybertek-reservation-api-qa2.herokuapp.com
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
 
-15:52:14.675 response time in milliseconds: 649.24
+18:29:48.960 response time in milliseconds: 935.58
 1 &lt; 200
 1 &lt; Connection: close
 1 &lt; Content-Type: application/json
-1 &lt; Date: Wed, 24 Mar 2021 14:52:14 GMT
+1 &lt; Date: Wed, 24 Mar 2021 17:29:48 GMT
 1 &lt; Server: Jetty(9.4.8.v20171121)
 1 &lt; Via: 1.1 vegur
 {"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE"}</div>
@@ -142,22 +142,22 @@
                             <div class="step-ref passed">8</div>
                             <div class="step-cell passed">And print response.accessToken</div>
                         </div>
-                        <div class="time-cell passed">11</div>
+                        <div class="time-cell passed">1</div>
                     </div>
-                    <div class="preformatted" data-parent="8">15:52:14.688 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE</div>
+                    <div class="preformatted" data-parent="8">18:29:48.962 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE</div>
                     <div class="step-row">
                         <div class="step-container" id="9">
                             <div class="step-ref passed">9</div>
                             <div class="step-cell passed">And def token = response.accessToken</div>
                         </div>
-                        <div class="time-cell passed">1</div>
+                        <div class="time-cell passed">0</div>
                     </div>
                     <div class="step-row">
                         <div class="step-container" id="10">
                             <div class="step-ref passed">10</div>
                             <div class="step-cell passed">And def name = 'steven'</div>
                         </div>
-                        <div class="time-cell passed">4</div>
+                        <div class="time-cell passed">1</div>
                     </div>
                 </div>
             </div>

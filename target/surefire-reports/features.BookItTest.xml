@@ -1,0 +1,49 @@
+<testsuite failures="0" name="features/BookItTest.feature" skipped="0" tests="2" time="5.842852">
+  <testcase classname="features.BookItTest" name="get user information" time="2.88907">
+    <system-out>* def baseUrl = 'https://cybertek-reservation-api-qa2.herokuapp.com/' ..... passed
+* def AuthFeature = call read('classpath:features/BookItAuth.feature') .... passed
+* def accessToken = AuthFeature.token ..................................... passed
+* def firstname = AuthFeature.name ........................................ passed
+* print firstname ......................................................... passed
+* print 'Token From Background',accessToken ............................... passed
+Given url baseUrl ......................................................... passed
+And path 'api/users/me' ................................................... passed
+And header Authorization = 'Bearer ' + accessToken ........................ passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response == {"id":57,"firstName":"Ase","lastName":"Norval","role":"student-team-leader"} . passed</system-out>
+  </testcase>
+  <testcase classname="features.BookItTest" name="get campus information" time="2.953781">
+    <system-out>* def baseUrl = 'https://cybertek-reservation-api-qa2.herokuapp.com/' ..... passed
+* def AuthFeature = call read('classpath:features/BookItAuth.feature') .... passed
+* def accessToken = AuthFeature.token ..................................... passed
+* def firstname = AuthFeature.name ........................................ passed
+* print firstname ......................................................... passed
+* print 'Token From Background',accessToken ............................... passed
+Given url baseUrl ......................................................... passed
+And path 'api/users/me' ................................................... passed
+And header Authorization = 'Bearer ' + accessToken ........................ passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And match response == {"id":57,"firstName":"Ase","lastName":"Norval","role":"student-team-leader"} . passed
+* def baseUrl = 'https://cybertek-reservation-api-qa2.herokuapp.com/' ..... passed
+* def AuthFeature = call read('classpath:features/BookItAuth.feature') .... passed
+* def accessToken = AuthFeature.token ..................................... passed
+* def firstname = AuthFeature.name ........................................ passed
+* print firstname ......................................................... passed
+* print 'Token From Background',accessToken ............................... passed
+Given url baseUrl ......................................................... passed
+And path 'api/campuses' ................................................... passed
+And header Authorization = 'Bearer ' + accessToken ........................ passed
+And header Accept = 'application/json' .................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And def expectedCampuses = read('classpath:data/campuses.json') ........... passed
+And match response == expectedCampuses .................................... passed</system-out>
+  </testcase>
+</testsuite>

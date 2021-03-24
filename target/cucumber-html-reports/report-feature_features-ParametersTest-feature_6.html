@@ -1,0 +1,3693 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: features/ParametersTest.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>24 Mar 2021, 18:29</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">features/ParametersTest.feature</td>
+                    <td      class="passed"    >69</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">69</td>
+
+          <td  class="passed"    >7</td>
+          <td >0</td>
+          <td class="total">7</td>
+
+          <td class="duration" data-value="1743195300">1s 743ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_acz.html">@acz</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">features/ParametersTest.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Parameters examples</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">011ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>18:29:49.548 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">140ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">path parameters</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;latest&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">136ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>18:29:49.568 request:
+1 &gt; GET https://api.exchangeratesapi.io/latest
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.exchangeratesapi.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:49.701 response time in milliseconds: 132.24
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 1039
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 63519fb51cb32d28-LHR
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=RKb7nSJjvpDI41xmNSsX%2FEoG27boTqTMAC518Ocz6wAFdKJzbheyNpMSTZTtWJWAyg1tl7olH2ouimdHdcAXj1MjyLAdEwytHSfi6E0O60Yr7J8Ho9MiZw%3D%3D&quot;}],&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=defaa881e97fcad0b0221081cb8deec601616606989; expires=Fri, 23-Apr-21 17:29:49 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 0906e2252c00002d2892916000000001
+{&quot;rates&quot;:{&quot;CAD&quot;:1.4884,&quot;HKD&quot;:9.1863,&quot;ISK&quot;:150.1,&quot;PHP&quot;:57.468,&quot;DKK&quot;:7.436,&quot;HUF&quot;:364.93,&quot;CZK&quot;:26.206,&quot;AUD&quot;:1.5532,&quot;RON&quot;:4.888,&quot;SEK&quot;:10.1635,&quot;IDR&quot;:17082.0,&quot;INR&quot;:85.8585,&quot;BRL&quot;:6.5258,&quot;RUB&quot;:90.2013,&quot;HRK&quot;:7.573,&quot;JPY&quot;:128.6,&quot;THB&quot;:36.658,&quot;CHF&quot;:1.1068,&quot;SGD&quot;:1.5917,&quot;PLN&quot;:4.628,&quot;BGN&quot;:1.9558,&quot;TRY&quot;:9.4009,&quot;CNY&quot;:7.7133,&quot;NOK&quot;:10.1563,&quot;NZD&quot;:1.6963,&quot;ZAR&quot;:17.5248,&quot;USD&quot;:1.1825,&quot;MXN&quot;:24.5236,&quot;ILS&quot;:3.8918,&quot;GBP&quot;:0.8625,&quot;KRW&quot;:1338.12,&quot;MYR&quot;:4.8843},&quot;base&quot;:&quot;EUR&quot;,&quot;date&quot;:&quot;2021-03-24&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>18:29:49.583 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">199ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">path parameters</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url baseUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;2010-01-12&quot;</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">193ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>18:29:49.620 request:
+1 &gt; GET https://api.exchangeratesapi.io/2010-01-12
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: api.exchangeratesapi.io
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:49.782 response time in milliseconds: 159.04
+1 &lt; 200
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Access-Control-Allow-Methods: GET
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 614
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 63519fb57956076e-LHR
+1 &lt; Cache-Control: max-age=1800
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 &lt; Expect-CT: max-age=604800, report-uri=&quot;https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct&quot;
+1 &lt; NEL: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report?s=Z1596i7tZFWzBemTw9E7u4GqZuViqAgcFSCv3klKiu5sS8JijDIV%2BKHxkFp2rww927m3lTc1cAA91ViGe4szDqpaJealTBTacM9%2FpkBZyKUk9Wi5sg8pWQ%3D%3D&quot;}],&quot;max_age&quot;:604800,&quot;group&quot;:&quot;cf-nel&quot;}
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=ddcd96d2a6dc6c3cd7a2259c5e00b21a21616606989; expires=Fri, 23-Apr-21 17:29:49 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept-Encoding
+1 &lt; cf-request-id: 0906e225700000076ebb990000000001
+{&quot;rates&quot;:{&quot;CAD&quot;:1.4959,&quot;HKD&quot;:11.2301,&quot;LVL&quot;:0.7093,&quot;PHP&quot;:66.106,&quot;DKK&quot;:7.4405,&quot;HUF&quot;:268.18,&quot;CZK&quot;:26.258,&quot;AUD&quot;:1.5668,&quot;RON&quot;:4.1405,&quot;SEK&quot;:10.2215,&quot;IDR&quot;:13281.14,&quot;INR&quot;:66.21,&quot;BRL&quot;:2.5309,&quot;RUB&quot;:42.6974,&quot;LTL&quot;:3.4528,&quot;JPY&quot;:132.41,&quot;THB&quot;:47.839,&quot;CHF&quot;:1.4743,&quot;SGD&quot;:2.0133,&quot;PLN&quot;:4.0838,&quot;BGN&quot;:1.9558,&quot;TRY&quot;:2.1084,&quot;CNY&quot;:9.8863,&quot;NOK&quot;:8.1825,&quot;NZD&quot;:1.9573,&quot;ZAR&quot;:10.8264,&quot;USD&quot;:1.4481,&quot;MXN&quot;:18.4995,&quot;EEK&quot;:15.6466,&quot;GBP&quot;:0.8972,&quot;KRW&quot;:1627.4,&quot;MYR&quot;:4.8424,&quot;HRK&quot;:7.2753},&quot;base&quot;:&quot;EUR&quot;,&quot;date&quot;:&quot;2010-01-12&quot;}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>18:29:49.710 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">259ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get all spartans with path</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans&quot;</span>
+  
+  <span class="lead-duration duration">009ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">242ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>18:29:49.725 request:
+1 &gt; GET http://54.89.109.206:8000/api/spartans
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 54.89.109.206:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:49.962 response time in milliseconds: 234.09
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+[{&quot;id&quot;:1,&quot;name&quot;:&quot;Meade&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:3584128232},{&quot;id&quot;:2,&quot;name&quot;:&quot;Nels&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:4218971348},{&quot;id&quot;:3,&quot;name&quot;:&quot;Fidole&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:6105035231},{&quot;id&quot;:4,&quot;name&quot;:&quot;Paige&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3786741487},{&quot;id&quot;:5,&quot;name&quot;:&quot;Blythe&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3677539542},{&quot;id&quot;:6,&quot;name&quot;:&quot;Tedmund&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:2227140732},{&quot;id&quot;:7,&quot;name&quot;:&quot;Hershel&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:5278678322},{&quot;id&quot;:8,&quot;name&quot;:&quot;Rodolfo&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9601637574},{&quot;id&quot;:9,&quot;name&quot;:&quot;Florrie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:1702025787},{&quot;id&quot;:10,&quot;name&quot;:&quot;Lorenza&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3312820936},{&quot;id&quot;:11,&quot;name&quot;:&quot;Nona&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7959094216},{&quot;id&quot;:12,&quot;name&quot;:&quot;Sol&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7006438852},{&quot;id&quot;:13,&quot;name&quot;:&quot;Jaimie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7842554879},{&quot;id&quot;:14,&quot;name&quot;:&quot;Grenville&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1065669615},{&quot;id&quot;:15,&quot;name&quot;:&quot;Meta&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:1938695106},{&quot;id&quot;:16,&quot;name&quot;:&quot;Sinclair&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9714460354},{&quot;id&quot;:17,&quot;name&quot;:&quot;Wash&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:4978976378},{&quot;id&quot;:18,&quot;name&quot;:&quot;Allen&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8716150217},{&quot;id&quot;:19,&quot;name&quot;:&quot;Bunnie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7662992732},{&quot;id&quot;:20,&quot;name&quot;:&quot;Lothario&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7551551687},{&quot;id&quot;:21,&quot;name&quot;:&quot;Mark&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1852873386},{&quot;id&quot;:22,&quot;name&quot;:&quot;Koenraad&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8451740840},{&quot;id&quot;:23,&quot;name&quot;:&quot;Mervin&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9098436816},{&quot;id&quot;:24,&quot;name&quot;:&quot;Julio&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9393139934},{&quot;id&quot;:25,&quot;name&quot;:&quot;Valentin&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1536037088},{&quot;id&quot;:26,&quot;name&quot;:&quot;Correy&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7823876031},{&quot;id&quot;:27,&quot;name&quot;:&quot;Jeanelle&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6662999903},{&quot;id&quot;:28,&quot;name&quot;:&quot;Woodrow&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7411659821},{&quot;id&quot;:29,&quot;name&quot;:&quot;Dorelle&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6687391932},{&quot;id&quot;:30,&quot;name&quot;:&quot;Melania&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:8916944276},{&quot;id&quot;:31,&quot;name&quot;:&quot;Maressa&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:2018031787},{&quot;id&quot;:32,&quot;name&quot;:&quot;Tessie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9545879168},{&quot;id&quot;:33,&quot;name&quot;:&quot;Wilek&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:2877865902},{&quot;id&quot;:34,&quot;name&quot;:&quot;Tucky&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:2935099804},{&quot;id&quot;:35,&quot;name&quot;:&quot;Gardiner&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:3751113352},{&quot;id&quot;:36,&quot;name&quot;:&quot;Sylas&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9853891474},{&quot;id&quot;:37,&quot;name&quot;:&quot;Grannie&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1075127669},{&quot;id&quot;:38,&quot;name&quot;:&quot;Juan&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9614487605},{&quot;id&quot;:39,&quot;name&quot;:&quot;Eveleen&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:1362642898},{&quot;id&quot;:40,&quot;name&quot;:&quot;Druci&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:4507606768},{&quot;id&quot;:41,&quot;name&quot;:&quot;Rosy&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6721964988},{&quot;id&quot;:42,&quot;name&quot;:&quot;Atlante&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:4579688654},{&quot;id&quot;:43,&quot;name&quot;:&quot;Reid&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8833893900},{&quot;id&quot;:44,&quot;name&quot;:&quot;Panchito&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7486765293},{&quot;id&quot;:45,&quot;name&quot;:&quot;Heddie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:1271425843},{&quot;id&quot;:46,&quot;name&quot;:&quot;Delora&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:4115324496},{&quot;id&quot;:47,&quot;name&quot;:&quot;Domenic&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:3952704485},{&quot;id&quot;:48,&quot;name&quot;:&quot;Wyatt&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7682768714},{&quot;id&quot;:49,&quot;name&quot;:&quot;Reinaldo&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:3623233145},{&quot;id&quot;:50,&quot;name&quot;:&quot;Jennica&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6986436734},{&quot;id&quot;:51,&quot;name&quot;:&quot;Padriac&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8444611168},{&quot;id&quot;:52,&quot;name&quot;:&quot;Tome&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:5654109704},{&quot;id&quot;:53,&quot;name&quot;:&quot;Berna&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:2072918455},{&quot;id&quot;:54,&quot;name&quot;:&quot;Bevon&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9831834168},{&quot;id&quot;:55,&quot;name&quot;:&quot;Karmen&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:5052029186},{&quot;id&quot;:56,&quot;name&quot;:&quot;Ewan&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:5733729948},{&quot;id&quot;:57,&quot;name&quot;:&quot;Freida&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:5712679899},{&quot;id&quot;:58,&quot;name&quot;:&quot;Alfy&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6529078662},{&quot;id&quot;:59,&quot;name&quot;:&quot;Mickey&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8775768925},{&quot;id&quot;:60,&quot;name&quot;:&quot;Elisabeth&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:8165224005},{&quot;id&quot;:61,&quot;name&quot;:&quot;Earlie&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:5709633007},{&quot;id&quot;:62,&quot;name&quot;:&quot;Robinia&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3542611707},{&quot;id&quot;:63,&quot;name&quot;:&quot;Clayton&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1782167106},{&quot;id&quot;:64,&quot;name&quot;:&quot;Putnam&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:6744135688},{&quot;id&quot;:65,&quot;name&quot;:&quot;Sean&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8566508311},{&quot;id&quot;:66,&quot;name&quot;:&quot;Quentin&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:3159018391},{&quot;id&quot;:67,&quot;name&quot;:&quot;Janette&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9887020445},{&quot;id&quot;:68,&quot;name&quot;:&quot;Adda&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:5361981152},{&quot;id&quot;:69,&quot;name&quot;:&quot;Elinor&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3161765672},{&quot;id&quot;:70,&quot;name&quot;:&quot;Abbey&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1259516767},{&quot;id&quot;:71,&quot;name&quot;:&quot;Collen&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9614634242},{&quot;id&quot;:72,&quot;name&quot;:&quot;Orion&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7485352272},{&quot;id&quot;:73,&quot;name&quot;:&quot;Amalita&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:2663607211},{&quot;id&quot;:74,&quot;name&quot;:&quot;Chen&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:9537864587},{&quot;id&quot;:75,&quot;name&quot;:&quot;Leland&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9672110769},{&quot;id&quot;:76,&quot;name&quot;:&quot;Arnie&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:4541117370},{&quot;id&quot;:77,&quot;name&quot;:&quot;Stevana&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:1459126818},{&quot;id&quot;:78,&quot;name&quot;:&quot;Cob&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1853354209},{&quot;id&quot;:79,&quot;name&quot;:&quot;Philis&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:2277085963},{&quot;id&quot;:80,&quot;name&quot;:&quot;Jocelin&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:4299058649},{&quot;id&quot;:81,&quot;name&quot;:&quot;Georgianne&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9594130239},{&quot;id&quot;:82,&quot;name&quot;:&quot;Catie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:4758237746},{&quot;id&quot;:83,&quot;name&quot;:&quot;Franky&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:7647130621},{&quot;id&quot;:84,&quot;name&quot;:&quot;Saw&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:2673833440},{&quot;id&quot;:85,&quot;name&quot;:&quot;Ingamar&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:6835038785},{&quot;id&quot;:86,&quot;name&quot;:&quot;Brook&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:2655095364},{&quot;id&quot;:87,&quot;name&quot;:&quot;Fenelia&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6475942543},{&quot;id&quot;:88,&quot;name&quot;:&quot;Julie&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1279288759},{&quot;id&quot;:89,&quot;name&quot;:&quot;Adan&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:8055782975},{&quot;id&quot;:90,&quot;name&quot;:&quot;PutName&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1231312321},{&quot;id&quot;:91,&quot;name&quot;:&quot;Jaquenetta&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7338210388},{&quot;id&quot;:92,&quot;name&quot;:&quot;Caitlin&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6911121800},{&quot;id&quot;:93,&quot;name&quot;:&quot;Chanda&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9289012086},{&quot;id&quot;:94,&quot;name&quot;:&quot;Marylee&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6385380284},{&quot;id&quot;:95,&quot;name&quot;:&quot;Lilias&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:5986446659},{&quot;id&quot;:96,&quot;name&quot;:&quot;Abie&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1788387111},{&quot;id&quot;:97,&quot;name&quot;:&quot;Saleem&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:6586151920},{&quot;id&quot;:98,&quot;name&quot;:&quot;Elita&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:1042902741},{&quot;id&quot;:99,&quot;name&quot;:&quot;Adair&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:3154964396},{&quot;id&quot;:100,&quot;name&quot;:&quot;Terence&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;phone&quot;:1311814806}]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>18:29:49.971 [print] [
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 3584128232,
+    &quot;name&quot;: &quot;Meade&quot;,
+    &quot;id&quot;: 1
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 4218971348,
+    &quot;name&quot;: &quot;Nels&quot;,
+    &quot;id&quot;: 2
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 6105035231,
+    &quot;name&quot;: &quot;Fidole&quot;,
+    &quot;id&quot;: 3
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 3786741487,
+    &quot;name&quot;: &quot;Paige&quot;,
+    &quot;id&quot;: 4
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 3677539542,
+    &quot;name&quot;: &quot;Blythe&quot;,
+    &quot;id&quot;: 5
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 2227140732,
+    &quot;name&quot;: &quot;Tedmund&quot;,
+    &quot;id&quot;: 6
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 5278678322,
+    &quot;name&quot;: &quot;Hershel&quot;,
+    &quot;id&quot;: 7
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9601637574,
+    &quot;name&quot;: &quot;Rodolfo&quot;,
+    &quot;id&quot;: 8
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 1702025787,
+    &quot;name&quot;: &quot;Florrie&quot;,
+    &quot;id&quot;: 9
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 3312820936,
+    &quot;name&quot;: &quot;Lorenza&quot;,
+    &quot;id&quot;: 10
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 7959094216,
+    &quot;name&quot;: &quot;Nona&quot;,
+    &quot;id&quot;: 11
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7006438852,
+    &quot;name&quot;: &quot;Sol&quot;,
+    &quot;id&quot;: 12
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 7842554879,
+    &quot;name&quot;: &quot;Jaimie&quot;,
+    &quot;id&quot;: 13
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1065669615,
+    &quot;name&quot;: &quot;Grenville&quot;,
+    &quot;id&quot;: 14
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 1938695106,
+    &quot;name&quot;: &quot;Meta&quot;,
+    &quot;id&quot;: 15
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9714460354,
+    &quot;name&quot;: &quot;Sinclair&quot;,
+    &quot;id&quot;: 16
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 4978976378,
+    &quot;name&quot;: &quot;Wash&quot;,
+    &quot;id&quot;: 17
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8716150217,
+    &quot;name&quot;: &quot;Allen&quot;,
+    &quot;id&quot;: 18
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 7662992732,
+    &quot;name&quot;: &quot;Bunnie&quot;,
+    &quot;id&quot;: 19
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7551551687,
+    &quot;name&quot;: &quot;Lothario&quot;,
+    &quot;id&quot;: 20
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1852873386,
+    &quot;name&quot;: &quot;Mark&quot;,
+    &quot;id&quot;: 21
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8451740840,
+    &quot;name&quot;: &quot;Koenraad&quot;,
+    &quot;id&quot;: 22
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9098436816,
+    &quot;name&quot;: &quot;Mervin&quot;,
+    &quot;id&quot;: 23
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9393139934,
+    &quot;name&quot;: &quot;Julio&quot;,
+    &quot;id&quot;: 24
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1536037088,
+    &quot;name&quot;: &quot;Valentin&quot;,
+    &quot;id&quot;: 25
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 7823876031,
+    &quot;name&quot;: &quot;Correy&quot;,
+    &quot;id&quot;: 26
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6662999903,
+    &quot;name&quot;: &quot;Jeanelle&quot;,
+    &quot;id&quot;: 27
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7411659821,
+    &quot;name&quot;: &quot;Woodrow&quot;,
+    &quot;id&quot;: 28
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6687391932,
+    &quot;name&quot;: &quot;Dorelle&quot;,
+    &quot;id&quot;: 29
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 8916944276,
+    &quot;name&quot;: &quot;Melania&quot;,
+    &quot;id&quot;: 30
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 2018031787,
+    &quot;name&quot;: &quot;Maressa&quot;,
+    &quot;id&quot;: 31
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 9545879168,
+    &quot;name&quot;: &quot;Tessie&quot;,
+    &quot;id&quot;: 32
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 2877865902,
+    &quot;name&quot;: &quot;Wilek&quot;,
+    &quot;id&quot;: 33
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 2935099804,
+    &quot;name&quot;: &quot;Tucky&quot;,
+    &quot;id&quot;: 34
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 3751113352,
+    &quot;name&quot;: &quot;Gardiner&quot;,
+    &quot;id&quot;: 35
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9853891474,
+    &quot;name&quot;: &quot;Sylas&quot;,
+    &quot;id&quot;: 36
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1075127669,
+    &quot;name&quot;: &quot;Grannie&quot;,
+    &quot;id&quot;: 37
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9614487605,
+    &quot;name&quot;: &quot;Juan&quot;,
+    &quot;id&quot;: 38
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 1362642898,
+    &quot;name&quot;: &quot;Eveleen&quot;,
+    &quot;id&quot;: 39
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 4507606768,
+    &quot;name&quot;: &quot;Druci&quot;,
+    &quot;id&quot;: 40
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6721964988,
+    &quot;name&quot;: &quot;Rosy&quot;,
+    &quot;id&quot;: 41
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 4579688654,
+    &quot;name&quot;: &quot;Atlante&quot;,
+    &quot;id&quot;: 42
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8833893900,
+    &quot;name&quot;: &quot;Reid&quot;,
+    &quot;id&quot;: 43
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7486765293,
+    &quot;name&quot;: &quot;Panchito&quot;,
+    &quot;id&quot;: 44
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 1271425843,
+    &quot;name&quot;: &quot;Heddie&quot;,
+    &quot;id&quot;: 45
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 4115324496,
+    &quot;name&quot;: &quot;Delora&quot;,
+    &quot;id&quot;: 46
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 3952704485,
+    &quot;name&quot;: &quot;Domenic&quot;,
+    &quot;id&quot;: 47
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7682768714,
+    &quot;name&quot;: &quot;Wyatt&quot;,
+    &quot;id&quot;: 48
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 3623233145,
+    &quot;name&quot;: &quot;Reinaldo&quot;,
+    &quot;id&quot;: 49
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6986436734,
+    &quot;name&quot;: &quot;Jennica&quot;,
+    &quot;id&quot;: 50
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8444611168,
+    &quot;name&quot;: &quot;Padriac&quot;,
+    &quot;id&quot;: 51
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 5654109704,
+    &quot;name&quot;: &quot;Tome&quot;,
+    &quot;id&quot;: 52
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 2072918455,
+    &quot;name&quot;: &quot;Berna&quot;,
+    &quot;id&quot;: 53
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9831834168,
+    &quot;name&quot;: &quot;Bevon&quot;,
+    &quot;id&quot;: 54
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 5052029186,
+    &quot;name&quot;: &quot;Karmen&quot;,
+    &quot;id&quot;: 55
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 5733729948,
+    &quot;name&quot;: &quot;Ewan&quot;,
+    &quot;id&quot;: 56
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 5712679899,
+    &quot;name&quot;: &quot;Freida&quot;,
+    &quot;id&quot;: 57
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6529078662,
+    &quot;name&quot;: &quot;Alfy&quot;,
+    &quot;id&quot;: 58
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8775768925,
+    &quot;name&quot;: &quot;Mickey&quot;,
+    &quot;id&quot;: 59
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 8165224005,
+    &quot;name&quot;: &quot;Elisabeth&quot;,
+    &quot;id&quot;: 60
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 5709633007,
+    &quot;name&quot;: &quot;Earlie&quot;,
+    &quot;id&quot;: 61
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 3542611707,
+    &quot;name&quot;: &quot;Robinia&quot;,
+    &quot;id&quot;: 62
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1782167106,
+    &quot;name&quot;: &quot;Clayton&quot;,
+    &quot;id&quot;: 63
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 6744135688,
+    &quot;name&quot;: &quot;Putnam&quot;,
+    &quot;id&quot;: 64
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8566508311,
+    &quot;name&quot;: &quot;Sean&quot;,
+    &quot;id&quot;: 65
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 3159018391,
+    &quot;name&quot;: &quot;Quentin&quot;,
+    &quot;id&quot;: 66
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 9887020445,
+    &quot;name&quot;: &quot;Janette&quot;,
+    &quot;id&quot;: 67
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 5361981152,
+    &quot;name&quot;: &quot;Adda&quot;,
+    &quot;id&quot;: 68
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 3161765672,
+    &quot;name&quot;: &quot;Elinor&quot;,
+    &quot;id&quot;: 69
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1259516767,
+    &quot;name&quot;: &quot;Abbey&quot;,
+    &quot;id&quot;: 70
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 9614634242,
+    &quot;name&quot;: &quot;Collen&quot;,
+    &quot;id&quot;: 71
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7485352272,
+    &quot;name&quot;: &quot;Orion&quot;,
+    &quot;id&quot;: 72
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 2663607211,
+    &quot;name&quot;: &quot;Amalita&quot;,
+    &quot;id&quot;: 73
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 9537864587,
+    &quot;name&quot;: &quot;Chen&quot;,
+    &quot;id&quot;: 74
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 9672110769,
+    &quot;name&quot;: &quot;Leland&quot;,
+    &quot;id&quot;: 75
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 4541117370,
+    &quot;name&quot;: &quot;Arnie&quot;,
+    &quot;id&quot;: 76
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 1459126818,
+    &quot;name&quot;: &quot;Stevana&quot;,
+    &quot;id&quot;: 77
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1853354209,
+    &quot;name&quot;: &quot;Cob&quot;,
+    &quot;id&quot;: 78
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 2277085963,
+    &quot;name&quot;: &quot;Philis&quot;,
+    &quot;id&quot;: 79
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 4299058649,
+    &quot;name&quot;: &quot;Jocelin&quot;,
+    &quot;id&quot;: 80
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 9594130239,
+    &quot;name&quot;: &quot;Georgianne&quot;,
+    &quot;id&quot;: 81
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 4758237746,
+    &quot;name&quot;: &quot;Catie&quot;,
+    &quot;id&quot;: 82
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 7647130621,
+    &quot;name&quot;: &quot;Franky&quot;,
+    &quot;id&quot;: 83
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 2673833440,
+    &quot;name&quot;: &quot;Saw&quot;,
+    &quot;id&quot;: 84
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 6835038785,
+    &quot;name&quot;: &quot;Ingamar&quot;,
+    &quot;id&quot;: 85
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 2655095364,
+    &quot;name&quot;: &quot;Brook&quot;,
+    &quot;id&quot;: 86
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6475942543,
+    &quot;name&quot;: &quot;Fenelia&quot;,
+    &quot;id&quot;: 87
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1279288759,
+    &quot;name&quot;: &quot;Julie&quot;,
+    &quot;id&quot;: 88
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 8055782975,
+    &quot;name&quot;: &quot;Adan&quot;,
+    &quot;id&quot;: 89
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1231312321,
+    &quot;name&quot;: &quot;PutName&quot;,
+    &quot;id&quot;: 90
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 7338210388,
+    &quot;name&quot;: &quot;Jaquenetta&quot;,
+    &quot;id&quot;: 91
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6911121800,
+    &quot;name&quot;: &quot;Caitlin&quot;,
+    &quot;id&quot;: 92
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 9289012086,
+    &quot;name&quot;: &quot;Chanda&quot;,
+    &quot;id&quot;: 93
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 6385380284,
+    &quot;name&quot;: &quot;Marylee&quot;,
+    &quot;id&quot;: 94
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 5986446659,
+    &quot;name&quot;: &quot;Lilias&quot;,
+    &quot;id&quot;: 95
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1788387111,
+    &quot;name&quot;: &quot;Abie&quot;,
+    &quot;id&quot;: 96
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 6586151920,
+    &quot;name&quot;: &quot;Saleem&quot;,
+    &quot;id&quot;: 97
+  },
+  {
+    &quot;gender&quot;: &quot;Female&quot;,
+    &quot;phone&quot;: 1042902741,
+    &quot;name&quot;: &quot;Elita&quot;,
+    &quot;id&quot;: 98
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 3154964396,
+    &quot;name&quot;: &quot;Adair&quot;,
+    &quot;id&quot;: 99
+  },
+  {
+    &quot;gender&quot;: &quot;Male&quot;,
+    &quot;phone&quot;: 1311814806,
+    &quot;name&quot;: &quot;Terence&quot;,
+    &quot;id&quot;: 100
+  }
+]</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-20">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-20" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-21">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-21" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>18:29:49.794 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">249ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-23">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get ones spartan only</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-23" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-24">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-24" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">007ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;10&quot;</span>
+  
+  <span class="lead-duration duration">019ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">220ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>18:29:49.825 request:
+1 &gt; GET http://54.89.109.206:8000/api/spartans/10
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 54.89.109.206:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.042 response time in milliseconds: 216.19
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:10,&quot;name&quot;:&quot;Lorenza&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3312820936}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>18:29:50.044 [print] {
+  &quot;gender&quot;: &quot;Female&quot;,
+  &quot;phone&quot;: 3312820936,
+  &quot;name&quot;: &quot;Lorenza&quot;,
+  &quot;id&quot;: 10
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == { &quot;gender&quot;: &quot;Female&quot;, &quot;phone&quot;: 3312820936, &quot;name&quot;: &quot;Lorenza&quot;, &quot;id&quot;: 10}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>18:29:49.981 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">241ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-30">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">get ones spartan only</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-30" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-31">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-31" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def expectedSpartan =</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>{
+    &quot;gender&quot;: &quot;Female&quot;,
+     &quot;phone&quot;: 3312820936,
+     &quot;name&quot;: &quot;Lorenza&quot;,
+     &quot;id&quot;: 10
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;10&quot;</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">239ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-33">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-33" class="collapse collapsable-details">
+        <pre>18:29:49.987 request:
+1 &gt; GET http://54.89.109.206:8000/api/spartans/10
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 54.89.109.206:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.223 response time in milliseconds: 226.59
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+{&quot;id&quot;:10,&quot;name&quot;:&quot;Lorenza&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:3312820936}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>18:29:50.224 [print] {
+  &quot;gender&quot;: &quot;Female&quot;,
+  &quot;phone&quot;: 3312820936,
+  &quot;name&quot;: &quot;Lorenza&quot;,
+  &quot;id&quot;: 10
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response == expectedSpartan</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-35">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-35" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-36">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-36" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-37">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-37" class="collapse collapsable-details">
+        <pre>18:29:50.052 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">245ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-38">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">query parameters</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-38" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-39">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-39" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url spartanUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path &quot;api/spartans/search&quot;</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param nameContains = 'j'</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param gender = 'Female'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">222ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>18:29:50.066 request:
+1 &gt; GET http://54.89.109.206:8000/api/spartans/search?nameContains=j&amp;gender=Female
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 54.89.109.206:8000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.287 response time in milliseconds: 219.74
+1 &lt; 200
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json
+1 &lt; Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 &lt; Keep-Alive: timeout=60
+1 &lt; Transfer-Encoding: chunked
+{&quot;content&quot;:[{&quot;id&quot;:13,&quot;name&quot;:&quot;Jaimie&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7842554879},{&quot;id&quot;:27,&quot;name&quot;:&quot;Jeanelle&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6662999903},{&quot;id&quot;:50,&quot;name&quot;:&quot;Jennica&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:6986436734},{&quot;id&quot;:67,&quot;name&quot;:&quot;Janette&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:9887020445},{&quot;id&quot;:80,&quot;name&quot;:&quot;Jocelin&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:4299058649},{&quot;id&quot;:91,&quot;name&quot;:&quot;Jaquenetta&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;phone&quot;:7338210388}],&quot;pageable&quot;:{&quot;sort&quot;:{&quot;sorted&quot;:false,&quot;unsorted&quot;:true,&quot;empty&quot;:true},&quot;offset&quot;:0,&quot;pageSize&quot;:20,&quot;pageNumber&quot;:0,&quot;paged&quot;:true,&quot;unpaged&quot;:false},&quot;last&quot;:true,&quot;totalElements&quot;:20,&quot;totalPages&quot;:1,&quot;number&quot;:0,&quot;sort&quot;:{&quot;sorted&quot;:false,&quot;unsorted&quot;:true,&quot;empty&quot;:true},&quot;size&quot;:20,&quot;first&quot;:true,&quot;numberOfElements&quot;:6,&quot;empty&quot;:false}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match header Content-Type == 'application/json'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>18:29:50.289 [print] {
+  &quot;number&quot;: 0,
+  &quot;last&quot;: true,
+  &quot;size&quot;: 20,
+  &quot;numberOfElements&quot;: 6,
+  &quot;totalPages&quot;: 1,
+  &quot;pageable&quot;: {
+    &quot;paged&quot;: true,
+    &quot;pageNumber&quot;: 0,
+    &quot;offset&quot;: 0,
+    &quot;pageSize&quot;: 20,
+    &quot;unpaged&quot;: false,
+    &quot;sort&quot;: {
+      &quot;unsorted&quot;: true,
+      &quot;sorted&quot;: false,
+      &quot;empty&quot;: true
+    }
+  },
+  &quot;sort&quot;: {
+    &quot;unsorted&quot;: true,
+    &quot;sorted&quot;: false,
+    &quot;empty&quot;: true
+  },
+  &quot;content&quot;: [
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;phone&quot;: 7842554879,
+      &quot;name&quot;: &quot;Jaimie&quot;,
+      &quot;id&quot;: 13
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;phone&quot;: 6662999903,
+      &quot;name&quot;: &quot;Jeanelle&quot;,
+      &quot;id&quot;: 27
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;phone&quot;: 6986436734,
+      &quot;name&quot;: &quot;Jennica&quot;,
+      &quot;id&quot;: 50
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;phone&quot;: 9887020445,
+      &quot;name&quot;: &quot;Janette&quot;,
+      &quot;id&quot;: 67
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;phone&quot;: 4299058649,
+      &quot;name&quot;: &quot;Jocelin&quot;,
+      &quot;id&quot;: 80
+    },
+    {
+      &quot;gender&quot;: &quot;Female&quot;,
+      &quot;phone&quot;: 7338210388,
+      &quot;name&quot;: &quot;Jaquenetta&quot;,
+      &quot;id&quot;: 91
+    }
+  ],
+  &quot;first&quot;: true,
+  &quot;totalElements&quot;: 20,
+  &quot;empty&quot;: false
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.pageable.pageNumber == 0</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.content contains {&quot;gender&quot;:&quot;Female&quot;}</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.content[*].gender == 'Female'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.content[0].name == 'Jaimie'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.content[*].phone == '#number'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-42" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseUrl = 'https://api.exchangeratesapi.io'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>18:29:50.230 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def spartanUrl = 'http://54.89.109.206:8000'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def hrUrl = 'http://34.228.41.120:1000/ords/hr'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">393ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">hr regions example</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-45" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-46" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">url hrUrl</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">path 'regions'</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method GET</span>
+  
+  <span class="lead-duration duration">384ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>18:29:50.236 request:
+1 &gt; GET http://34.228.41.120:1000/ords/hr/regions
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: 34.228.41.120:1000
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.488 response time in milliseconds: 250.38
+1 &lt; 301
+1 &lt; Location: http://34.228.41.120:1000/ords/hr/regions/
+1 &lt; Transfer-Encoding: chunked
+
+18:29:50.491 request:
+2 &gt; GET http://34.228.41.120:1000/ords/hr/regions
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: 34.228.41.120:1000
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.618 response time in milliseconds: 123.69
+2 &lt; 200
+2 &lt; Content-Type: application/json
+2 &lt; Date: Wed, 24 Mar 2021 17:29:40 GMT
+2 &lt; ETag: &quot;n0RfIi41Uf6Et7Q3O+B1f2mBqcwP1POugILrR8mzso4cxYV8W+LHDsgXDLNxT7f0wQEMmqbJMEji2rFohO8F7A==&quot;
+2 &lt; Transfer-Encoding: chunked
+{&quot;items&quot;:[{&quot;region_id&quot;:56,&quot;region_name&quot;:&quot;RandomRegion&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/56&quot;}]},{&quot;region_id&quot;:998,&quot;region_name&quot;:&quot;Cybertek Saturn&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/998&quot;}]},{&quot;region_id&quot;:24,&quot;region_name&quot;:&quot;Cybertek Austria&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/24&quot;}]},{&quot;region_id&quot;:8,&quot;region_name&quot;:&quot;Cybertek Austria&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/8&quot;}]},{&quot;region_id&quot;:87,&quot;region_name&quot;:&quot;Cybertek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/87&quot;}]},{&quot;region_id&quot;:80,&quot;region_name&quot;:&quot;Cybertek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/80&quot;}]},{&quot;region_id&quot;:11,&quot;region_name&quot;:&quot;Cybertek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/11&quot;}]},{&quot;region_id&quot;:300,&quot;region_name&quot;:&quot;Cybertek Europe&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/300&quot;}]},{&quot;region_id&quot;:473,&quot;region_name&quot;:&quot;RandomRegion&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/473&quot;}]},{&quot;region_id&quot;:21,&quot;region_name&quot;:&quot;Cybertek SpainMD&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/21&quot;}]},{&quot;region_id&quot;:228,&quot;region_name&quot;:&quot;RandomRegion&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/228&quot;}]},{&quot;region_id&quot;:999,&quot;region_name&quot;:&quot;Cybertek Saturn&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/999&quot;}]},{&quot;region_id&quot;:555,&quot;region_name&quot;:&quot;DXB&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/555&quot;}]},{&quot;region_id&quot;:333,&quot;region_name&quot;:&quot;UX&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/333&quot;}]},{&quot;region_id&quot;:16,&quot;region_name&quot;:&quot;Jo's Land&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/16&quot;}]},{&quot;region_id&quot;:444,&quot;region_name&quot;:&quot;DXB2&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/444&quot;}]},{&quot;region_id&quot;:222,&quot;region_name&quot;:&quot;Vern&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/222&quot;}]},{&quot;region_id&quot;:158,&quot;region_name&quot;:&quot;Cybertfgek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/158&quot;}]},{&quot;region_id&quot;:159,&quot;region_name&quot;:&quot;Cybertfgek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/159&quot;}]},{&quot;region_id&quot;:1587,&quot;region_name&quot;:&quot;Cybertfgek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/1587&quot;}]},{&quot;region_id&quot;:1001,&quot;region_name&quot;:&quot;Cybertek ITALY&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/1001&quot;}]},{&quot;region_id&quot;:937,&quot;region_name&quot;:&quot;Cybertek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/937&quot;}]},{&quot;region_id&quot;:66,&quot;region_name&quot;:&quot;randomregion&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/66&quot;}]},{&quot;region_id&quot;:50,&quot;region_name&quot;:&quot;randomregion&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/50&quot;}]},{&quot;region_id&quot;:2578,&quot;region_name&quot;:&quot;Cybertek Germany&quot;,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/2578&quot;}]}],&quot;hasMore&quot;:true,&quot;limit&quot;:25,&quot;offset&quot;:0,&quot;count&quot;:25,&quot;links&quot;:[{&quot;rel&quot;:&quot;self&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/&quot;},{&quot;rel&quot;:&quot;edit&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/&quot;},{&quot;rel&quot;:&quot;describedby&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/metadata-catalog/regions/&quot;},{&quot;rel&quot;:&quot;first&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/&quot;},{&quot;rel&quot;:&quot;next&quot;,&quot;href&quot;:&quot;http://34.228.41.120:1000/ords/hr/regions/?offset=25&quot;}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">print response</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-48">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-48" class="collapse collapsable-details">
+        <pre>18:29:50.619 [print] {
+  &quot;offset&quot;: 0,
+  &quot;hasMore&quot;: true,
+  &quot;limit&quot;: 25,
+  &quot;count&quot;: 25,
+  &quot;links&quot;: [
+    {
+      &quot;rel&quot;: &quot;self&quot;,
+      &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;edit&quot;,
+      &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;describedby&quot;,
+      &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/metadata-catalog/regions/&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;first&quot;,
+      &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/&quot;
+    },
+    {
+      &quot;rel&quot;: &quot;next&quot;,
+      &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/?offset=25&quot;
+    }
+  ],
+  &quot;items&quot;: [
+    {
+      &quot;region_id&quot;: 56,
+      &quot;region_name&quot;: &quot;RandomRegion&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/56&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 998,
+      &quot;region_name&quot;: &quot;Cybertek Saturn&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/998&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 24,
+      &quot;region_name&quot;: &quot;Cybertek Austria&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/24&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 8,
+      &quot;region_name&quot;: &quot;Cybertek Austria&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/8&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 87,
+      &quot;region_name&quot;: &quot;Cybertek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/87&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 80,
+      &quot;region_name&quot;: &quot;Cybertek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/80&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 11,
+      &quot;region_name&quot;: &quot;Cybertek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/11&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 300,
+      &quot;region_name&quot;: &quot;Cybertek Europe&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/300&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 473,
+      &quot;region_name&quot;: &quot;RandomRegion&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/473&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 21,
+      &quot;region_name&quot;: &quot;Cybertek SpainMD&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/21&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 228,
+      &quot;region_name&quot;: &quot;RandomRegion&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/228&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 999,
+      &quot;region_name&quot;: &quot;Cybertek Saturn&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/999&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 555,
+      &quot;region_name&quot;: &quot;DXB&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/555&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 333,
+      &quot;region_name&quot;: &quot;UX&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/333&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 16,
+      &quot;region_name&quot;: &quot;Jo's Land&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/16&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 444,
+      &quot;region_name&quot;: &quot;DXB2&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/444&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 222,
+      &quot;region_name&quot;: &quot;Vern&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/222&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 158,
+      &quot;region_name&quot;: &quot;Cybertfgek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/158&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 159,
+      &quot;region_name&quot;: &quot;Cybertfgek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/159&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 1587,
+      &quot;region_name&quot;: &quot;Cybertfgek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/1587&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 1001,
+      &quot;region_name&quot;: &quot;Cybertek ITALY&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/1001&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 937,
+      &quot;region_name&quot;: &quot;Cybertek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/937&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 66,
+      &quot;region_name&quot;: &quot;randomregion&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/66&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 50,
+      &quot;region_name&quot;: &quot;randomregion&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/50&quot;
+        }
+      ]
+    },
+    {
+      &quot;region_id&quot;: 2578,
+      &quot;region_name&quot;: &quot;Cybertek Germany&quot;,
+      &quot;links&quot;: [
+        {
+          &quot;rel&quot;: &quot;self&quot;,
+          &quot;href&quot;: &quot;http://34.228.41.120:1000/ords/hr/regions/2578&quot;
+        }
+      ]
+    }
+  ]
+}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match response.limit == 25</span>
+  
+  <span class="lead-duration duration">004ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">match each response.items[*].region_id == '#number'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

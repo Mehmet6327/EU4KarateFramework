@@ -1,0 +1,283 @@
+18:29:46.572 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:46.753 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:47.023 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:47.093 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:47.118 [print] 2
+18:29:47.150 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:48.026 request:
+1 > GET https://api.exchangeratesapi.io/2010-01-12
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.600 response time in milliseconds: 566.05
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < Age: 613
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 63519fadbc5ce664-LHR
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"max_age":604800,"report_to":"cf-nel"}
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=TfzAm7EjeMEqwkCZF%2BnBxdhhnQ4gOhRzsBeMinWDI0NpRuhFXMl%2FFFksyNZxOx8e2JHnDrksIx9COpLjjBJbRlPhp7O3WHhOc2zQxaBK3f8UD4aAfZKqRw%3D%3D"}],"group":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddc833aa83566b2a748366b6f4343f5c81616606988; expires=Fri, 23-Apr-21 17:29:48 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < cf-request-id: 0906e220940000e6649f861000000001
+{"rates":{"CAD":1.4959,"HKD":11.2301,"LVL":0.7093,"PHP":66.106,"DKK":7.4405,"HUF":268.18,"CZK":26.258,"AUD":1.5668,"RON":4.1405,"SEK":10.2215,"IDR":13281.14,"INR":66.21,"BRL":2.5309,"RUB":42.6974,"LTL":3.4528,"JPY":132.41,"THB":47.839,"CHF":1.4743,"SGD":2.0133,"PLN":4.0838,"BGN":1.9558,"TRY":2.1084,"CNY":9.8863,"NOK":8.1825,"NZD":1.9573,"ZAR":10.8264,"USD":1.4481,"MXN":18.4995,"EEK":15.6466,"GBP":0.8972,"KRW":1627.4,"MYR":4.8424,"HRK":7.2753},"base":"EUR","date":"2010-01-12"}
+
+18:29:48.615 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:48.618 request:
+1 > GET https://api.exchangeratesapi.io/2010-01-12
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: api.exchangeratesapi.io
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:48.763 response time in milliseconds: 142.14
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Allow-Methods: GET
+1 < Access-Control-Allow-Origin: *
+1 < Age: 613
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 63519faf3c6d540f-LHR
+1 < Cache-Control: max-age=1800
+1 < Connection: keep-alive
+1 < Content-Type: application/json
+1 < Date: Wed, 24 Mar 2021 17:29:48 GMT
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < NEL: {"report_to":"cf-nel","max_age":604800}
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report?s=HWriRGxVaECaT9e6LG2%2B0GysbclD4c4np6wlzFZFQuhSz4I2ie9n00CsJ6vQDXrAMA1a%2BkmdYEsyXXTo5GxJHrxAFCLCjOGmyAcB5hSV6NUCZqCCl4ClzQ%3D%3D"}]}
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6588a5faaf56708606cc1f0d105f3cc51616606988; expires=Fri, 23-Apr-21 17:29:48 GMT; path=/; domain=.exchangeratesapi.io; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < cf-request-id: 0906e221880000540f3096f000000001
+{"rates":{"CAD":1.4959,"HKD":11.2301,"LVL":0.7093,"PHP":66.106,"DKK":7.4405,"HUF":268.18,"CZK":26.258,"AUD":1.5668,"RON":4.1405,"SEK":10.2215,"IDR":13281.14,"INR":66.21,"BRL":2.5309,"RUB":42.6974,"LTL":3.4528,"JPY":132.41,"THB":47.839,"CHF":1.4743,"SGD":2.0133,"PLN":4.0838,"BGN":1.9558,"TRY":2.1084,"CNY":9.8863,"NOK":8.1825,"NZD":1.9573,"ZAR":10.8264,"USD":1.4481,"MXN":18.4995,"EEK":15.6466,"GBP":0.8972,"KRW":1627.4,"MYR":4.8424,"HRK":7.2753},"base":"EUR","date":"2010-01-12"}
+
+18:29:48.766 [print] {
+  "date": "2010-01-12",
+  "rates": {
+    "CHF": 1.4743,
+    "HRK": 7.2753,
+    "MXN": 18.4995,
+    "LVL": 0.7093,
+    "LTL": 3.4528,
+    "ZAR": 10.8264,
+    "INR": 66.21,
+    "THB": 47.839,
+    "CNY": 9.8863,
+    "AUD": 1.5668,
+    "KRW": 1627.4,
+    "JPY": 132.41,
+    "PLN": 4.0838,
+    "GBP": 0.8972,
+    "IDR": 13281.14,
+    "HUF": 268.18,
+    "PHP": 66.106,
+    "TRY": 2.1084,
+    "RUB": 42.6974,
+    "HKD": 11.2301,
+    "DKK": 7.4405,
+    "CAD": 1.4959,
+    "USD": 1.4481,
+    "MYR": 4.8424,
+    "BGN": 1.9558,
+    "EEK": 15.6466,
+    "NOK": 8.1825,
+    "RON": 4.1405,
+    "SGD": 2.0133,
+    "CZK": 26.258,
+    "SEK": 10.2215,
+    "NZD": 1.9573,
+    "BRL": 2.5309
+  },
+  "base": "EUR"
+}
+
+18:29:48.781 [print] EUR
+18:29:48.802 [print] {
+  "CHF": 1.4743,
+  "HRK": 7.2753,
+  "MXN": 18.4995,
+  "LVL": 0.7093,
+  "LTL": 3.4528,
+  "ZAR": 10.8264,
+  "INR": 66.21,
+  "THB": 47.839,
+  "CNY": 9.8863,
+  "AUD": 1.5668,
+  "KRW": 1627.4,
+  "JPY": 132.41,
+  "PLN": 4.0838,
+  "GBP": 0.8972,
+  "IDR": 13281.14,
+  "HUF": 268.18,
+  "PHP": 66.106,
+  "TRY": 2.1084,
+  "RUB": 42.6974,
+  "HKD": 11.2301,
+  "DKK": 7.4405,
+  "CAD": 1.4959,
+  "USD": 1.4481,
+  "MYR": 4.8424,
+  "BGN": 1.9558,
+  "EEK": 15.6466,
+  "NOK": 8.1825,
+  "RON": 4.1405,
+  "SGD": 2.0133,
+  "CZK": 26.258,
+  "SEK": 10.2215,
+  "NZD": 1.9573,
+  "BRL": 2.5309
+}
+
+18:29:48.818 [print] 1.4481
+18:29:48.859 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:48.866 [print] some words to print
+18:29:48.895 [print] my name is karate kid
+18:29:48.904 [print] 4
+18:29:48.926 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:48.927 [print] {
+  "name": "sam",
+  "owes_tuition": false
+}
+
+18:29:49.021 [print] sam
+18:29:49.097 [print] false
+18:29:49.148 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:49.195 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=sbirdbj%40fc2.com&password=asenorval
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:49.792 response time in milliseconds: 594.59
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 24 Mar 2021 17:29:49 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE"}
+
+18:29:49.793 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI1NyIsImF1ZCI6InN0dWRlbnQtdGVhbS1sZWFkZXIifQ.a_N9URDBPGOMcDdEVoaMHsJtk3jOnig0v0SCtSWcsGE
+18:29:49.802 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+18:29:49.820 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=apainb6%40google.co.jp&password=rosettalightollers
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.432 response time in milliseconds: 609.20
+1 < 200
+1 < Connection: close
+1 < Content-Type: application/json
+1 < Date: Wed, 24 Mar 2021 17:29:50 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+{"accessToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MSIsImF1ZCI6InN0dWRlbnQtdGVhbS1tZW1iZXIifQ.dvvX2-2_GXGtSfbrIuETJy9TvP-nYxp3n3vZclKEDZ8","refreshToken":"eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MSIsImF1ZCI6InN0dWRlbnQtdGVhbS1tZW1iZXIifQ.dvvX2-2_GXGtSfbrIuETJy9TvP-nYxp3n3vZclKEDZ8"}
+
+18:29:50.435 [print] eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0MSIsImF1ZCI6InN0dWRlbnQtdGVhbS1tZW1iZXIifQ.dvvX2-2_GXGtSfbrIuETJy9TvP-nYxp3n3vZclKEDZ8
+18:29:50.449 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:50.887 response time in milliseconds: 434.69
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:50 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:50.891 status code was: 422, expected: 200, response time: 435, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:50.898 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:51.347 response time in milliseconds: 447.62
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:51 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:51.348 status code was: 422, expected: 200, response time: 448, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:51.356 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:51.825 response time in milliseconds: 465.57
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:51 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:51.826 status code was: 422, expected: 200, response time: 466, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:51.835 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:52.268 response time in milliseconds: 431.14
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:52 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:52.269 status code was: 422, expected: 200, response time: 431, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.
+18:29:52.274 request:
+1 > GET https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: cybertek-reservation-api-qa2.herokuapp.com
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/13.0.1)
+
+18:29:52.699 response time in milliseconds: 423.93
+1 < 422
+1 < Connection: close
+1 < Content-Type: text/html;charset=utf-8
+1 < Date: Wed, 24 Mar 2021 17:29:52 GMT
+1 < Server: Jetty(9.4.8.v20171121)
+1 < Via: 1.1 vegur
+requested email resource was not found.
+
+18:29:52.700 status code was: 422, expected: 200, response time: 424, url: https://cybertek-reservation-api-qa2.herokuapp.com/sign?email=%3Cemail%3E&password=%3Cpassword%3E, response: requested email resource was not found.

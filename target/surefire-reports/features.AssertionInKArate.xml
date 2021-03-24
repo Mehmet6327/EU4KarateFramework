@@ -1,0 +1,49 @@
+<testsuite failures="0" name="features/AssertionInKArate.feature" skipped="0" tests="4" time="0.354174">
+  <testcase classname="features.AssertionInKArate" name="some matching example" time="0.012868">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed</system-out>
+  </testcase>
+  <testcase classname="features.AssertionInKArate" name="more matching example" time="0.24617">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed
+* def employee = .......................................................... passed
+* def emp_name = employee.first_name ...................................... passed
+* match emp_name == 'TJ' .................................................. passed
+* match employee.salary == 24001 .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="features.AssertionInKArate" name="fuzzy matching" time="0.053573">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed
+* def employee = .......................................................... passed
+* def emp_name = employee.first_name ...................................... passed
+* match emp_name == 'TJ' .................................................. passed
+* match employee.salary == 24001 .......................................... passed
+* def employee = .......................................................... passed
+* match employee.first_name == '#string' .................................. passed
+* match employee.salary == '#number' ...................................... passed
+* match employee.active == '#boolean' ..................................... passed
+* match employee.last_name == '#notpresent' ............................... passed</system-out>
+  </testcase>
+  <testcase classname="features.AssertionInKArate" name="contains matching" time="0.041562">
+    <system-out>* def name = 'Severus Snape' .............................................. passed
+* match name == 'Severus Snape' ........................................... passed
+* match name != 'Tom Riddle' .............................................. passed
+* def employee = .......................................................... passed
+* def emp_name = employee.first_name ...................................... passed
+* match emp_name == 'TJ' .................................................. passed
+* match employee.salary == 24001 .......................................... passed
+* def employee = .......................................................... passed
+* match employee.first_name == '#string' .................................. passed
+* match employee.salary == '#number' ...................................... passed
+* match employee.active == '#boolean' ..................................... passed
+* match employee.last_name == '#notpresent' ............................... passed
+* def employees = ......................................................... passed
+* def length = employees.length ........................................... passed
+* print length ............................................................ passed
+* match  length == 2 ...................................................... passed
+* match employees contains any {"first_name":"TJ","salary":24001,"active":true } . passed</system-out>
+  </testcase>
+</testsuite>
